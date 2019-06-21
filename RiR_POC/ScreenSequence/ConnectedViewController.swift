@@ -33,6 +33,8 @@ class ConnectedViewController: UIViewController {
     @IBOutlet weak var btnFourTenStage: UIButton!
     @IBOutlet weak var btnSixTenStage: UIButton!
     
+    private let watsonIntegration = WatsonIntegration()
+    
     let btnColorDeselected = UIColor(rgb: 0x3C134C)
     let btnColorSelected = UIColor(rgb: 0xE64484)
 
@@ -110,23 +112,26 @@ class ConnectedViewController: UIViewController {
                 imgFreq.image = UIImage(named: "voice_recording")
                 lblQuestion1.isHidden = false
                 // Selected
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    self.lblAnswer1.isHidden = false
-                    self.btnQuestion1.isHidden = false
-
-
-                }
                 
-                DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                     button.setImage(UIImage(named: "microphone"), for: .selected)
-                    self.imgFreq.image = UIImage(named: "voice_stop")
-                    self.lblQuestion1.isHidden = true
-                    self.lblAnswer1.isHidden = true
-                    self.btnQuestion1.isHidden = true
-                    self.btnNext1.isHidden = false
-                    
-                }
-
+                    self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
+                        if let data = data {
+                            SoundManager.shared.playSound(withData: data)
+                        }
+                        self.lblAnswer1.isHidden = false
+                        self.btnQuestion1.isHidden = false
+                        
+                        //
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                            button.setImage(UIImage(named: "microphone"), for: .selected)
+                            self.imgFreq.image = UIImage(named: "voice_stop")
+                            self.lblQuestion1.isHidden = true
+                            self.lblAnswer1.isHidden = true
+                            self.btnQuestion1.isHidden = true
+                            self.btnNext1.isHidden = false
+                            
+                        }
+                    })
+                
                 
             }
             else

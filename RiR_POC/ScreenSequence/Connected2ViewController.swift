@@ -20,6 +20,8 @@ class Connected2ViewController: UIViewController {
     @IBOutlet weak var btnNext2: UIButton!
     @IBOutlet weak var btnNext3: UIButton!
     
+    private let watsonIntegration = WatsonIntegration()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imgBadge1?.isHidden = false
@@ -59,13 +61,15 @@ class Connected2ViewController: UIViewController {
                 button.setImage(UIImage(named: "microphone_selected"), for: .selected)
                 imgFreq.image = UIImage(named: "voice_recording")
                 lblQuestion2?.isHidden = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            
+                self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer2.text ?? "", completion: { (data) in
+                    if let data = data {
+                        SoundManager.shared.playSound(withData: data)
+                    }
+                    self.lblAnswer2?.isHidden = false
                     self.btnNext2?.isHidden = false
                     self.btnNext3?.isHidden = false
-                    self.lblAnswer2?.isHidden = false
-                    
-                }
-            
+                })
             
             }
             else
@@ -76,7 +80,6 @@ class Connected2ViewController: UIViewController {
                 lblQuestion2?.isHidden = true
                 btnNext2?.isHidden = true
                 lblAnswer2?.isHidden = true
-            
             }
         }
     }
