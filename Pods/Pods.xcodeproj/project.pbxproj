@@ -1,0 +1,1304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05687FC7EC7BA20D33F843FE5CBA3E99 /* RestRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E308543E85343190EE07CF4D74620131 /* RestRequest.swift */; };
+		05B241F7B0025D4948DF4751372D5773 /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BC170B6D6848FCFEE9C85A4C2C535FF /* IBMWatsonTextToSpeechV1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D4B5A9477213252FCCDA21A3F3331B4 /* RestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6575D7D7391EA23B30CB5736C02E46 /* RestError.swift */; };
+		10CEEE35F940B1DC5671E886EDACE682 /* opus_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 07B7447CA7CA11CEA3F4919100727EDF /* opus_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19A93C32D67A9C46D41DB808AB49BD55 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1C89D459E7C539BB6671AF722F042B7 /* IBMWatsonTextToSpeechV1-dummy.m */; };
+		209FA439C729A7AB68B75AFB2E756102 /* opus_multistream.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E56A3D68BBB2108674EB80DC785F2C /* opus_multistream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E88720DEBF80D634C384561FF07961B /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED6050D709C1EFAD9E5629D7B173242 /* Text.swift */; };
+		2F413D6A04C77FB94FF9755596549AED /* CreateVoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E92D6E4F51FF7663B95A753DD2810 /* CreateVoiceModel.swift */; };
+		3163A4223F3175B994E25777EFF9B203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */; };
+		381B2BA08C0929BE0C2ED6C10DF2C59C /* Pods-RiR_POC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2B0D83139008F53C86BAD8921307A82 /* Pods-RiR_POC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		397C975FE474C4C8CB51A76097B7937F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */; };
+		3D2E91BBFC80E83237568F5BD19877AC /* VoiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D3545D3FEEF3E85745473E89BC987 /* VoiceModels.swift */; };
+		40F5E7EAC31BF5238F0A0E12C8C35E22 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB981741400BE32947BA0DBD85C78341 /* TextToSpeech.swift */; };
+		46F772501C84BED58A0D438BE6C72A24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */; };
+		4B34E2B75C177D9136DD0056C395E03F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */; };
+		4F233D5D83D95DC360FD5AF2892DDE78 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A697D4D56A81036DB853FB99DA3D3F7 /* Voice.swift */; };
+		520DC82CE7C257C33D00E6F986AD0375 /* TextToSpeechDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EFD29BFE9BF699E921741B9A1D2B6 /* TextToSpeechDecoder.swift */; };
+		5532115D73B71B131602D6A002C42596 /* Pods-RiR_POCUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 031EFE792A08D9AE480CD4E77820987B /* Pods-RiR_POCUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56269B357BADB4C2792A2B9EB6C0516F /* opus_header.h in Headers */ = {isa = PBXBuildFile; fileRef = A2EB4D8A9B9C0E28989ED16CB69B35FF /* opus_header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		624B8FDEB17AB97079E3C196BC858276 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D64D8FDF1C837FEE8A8378C52F0E0A3 /* RestKit.framework */; };
+		632FE5C53B4680E3F80B3C850AEE9562 /* InsecureConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21347E8509763D28537507984056C614 /* InsecureConnection.swift */; };
+		65AC540CD1C21A1C4FD1EB3932F3AF76 /* VoiceCustomization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59C1F74E9AD0264071B8E444E360B4 /* VoiceCustomization.swift */; };
+		68D2337E8606842BB46721F610D565AB /* Voices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46DE4A078BD87CA6C80C8CB54C72ED /* Voices.swift */; };
+		753D162790DF06A78F31A037F27B354D /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44509E1AEA2CC9A4E3F0106B715F73A4 /* CodableExtensions.swift */; };
+		78021AB40CDE97C21C22C43367CD7716 /* SupportedFeatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68699F77C78B74E6137D20C6476D6F /* SupportedFeatures.swift */; };
+		7A3B0AB729C7645D6C646A2AC1580970 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDEE42EC134018301C0628B2CAB412 /* RestResponse.swift */; };
+		8558967FEAD09FF137DF0F395CC401E0 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EAE4A2E4D3087231A7550C8E416597 /* Authentication.swift */; };
+		8958002D548CEBDAD88786ADD644E93E /* VoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955A3CD6211D8A4E29641A4B07D5A8C /* VoiceModel.swift */; };
+		90D9C0FF1A1FFA8FE4A4C0AD2B6D250B /* IBMWatsonRestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41923B9569594F8B2E918A2C09B7DC9F /* IBMWatsonRestKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99E2C656543A223448087E5B8E21B46C /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1A31D5FF69A7216984FE042D9D72F5 /* JSON.swift */; };
+		A365EF5FB731C3D6FB9715B4BF14C453 /* IBMWatsonRestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A9A7E990CE76D47BE8FF5791631DF2 /* IBMWatsonRestKit-dummy.m */; };
+		A656EF72CFAF1C6B59AA4A4588D223C5 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BC710E87BF83E5ECA4D138466E841F /* MultipartFormData.swift */; };
+		B2B2D5DEA82DFA0B1BB1F6BD810E7693 /* UpdateVoiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481AE1F7F1AA3B2E2D56D854BD2BF17A /* UpdateVoiceModel.swift */; };
+		B2C3AA6AD860AC2818E612F40539894A /* opus_defines.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE400ADDE48C14AE3516F5B0FA2DE7D /* opus_defines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB657CE8D291268BDCB8571033FBE252 /* Pods-RiR_POC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3ECA60C34070B13728B01359B8CDE /* Pods-RiR_POC-dummy.m */; };
+		BCAB2C0707872620769CA8449BB5EACA /* Pronunciation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E9BC11C204E07AA75A6FA565EEF3C /* Pronunciation.swift */; };
+		CAE12BE5AC49562D5BCCD900C35848EA /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B7C4D41E28398838BCD88701A7DEC0 /* Word.swift */; };
+		CF614881CFDE454FBC64F748457FF627 /* os_types.h in Headers */ = {isa = PBXBuildFile; fileRef = E8EA5363A80AC95FD9655148CE5ECC50 /* os_types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D80F2749630DA8BDC8D8AABE8447A22C /* opus_header.c in Sources */ = {isa = PBXBuildFile; fileRef = 2794C9932F9846AA8DC594B58CE2F2D8 /* opus_header.c */; };
+		D8ACE13B665EFFD75931B583586C4A21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */; };
+		E04392C334B479E37456C48AA6965790 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24E308CBE45D88507F4E91F292F4581 /* Shared.swift */; };
+		E7A96705F3C7AF79D396E903200F948D /* Pods-RiR_POCUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D2E29E587CB0C9F24CD6179E4FA413 /* Pods-RiR_POCUITests-dummy.m */; };
+		EA5A9B96259B186794FF968FA02CACA9 /* Pods-RiR_POCTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D854A92F652FA46D92733070A1A7D0F /* Pods-RiR_POCTests-dummy.m */; };
+		F478FBA6F92AB10B379262A5DA7A02A0 /* ogg.h in Headers */ = {isa = PBXBuildFile; fileRef = E2814B68FDBEB992F807A973E17933BD /* ogg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54A775388A04FE263EC55C022477B22 /* Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75FBCE1D68A7BEEBCA3762C138324AC /* Words.swift */; };
+		F5E35B1A82530F99FC3816B5C0BA7489 /* opus.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2F887E267AC15B698447DF9545030A /* opus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F878788CD620769D4828FBB8D3200BEA /* WAVRepair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D96C082C120ACC9E6AAF6427CC73854 /* WAVRepair.swift */; };
+		FDE2ECF3825795DC82847C6C77DB79F2 /* Pods-RiR_POCTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 066FAAAD8244848B0AF0C6F235A687DB /* Pods-RiR_POCTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF9890595B8CEAE99DB121A385FB9653 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC3914CF7CB8BA1926E1CE67F18BF5B /* Translation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0026BD3157D2762FF1DEC7D3B665E695 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C0C40D2B486C59711C6435A2CF518B8;
+			remoteInfo = "Pods-RiR_POC";
+		};
+		0AD9E59CE9E6D10A4263F68801533A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B17C49233B25775B160A8CC034D01AE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+		4130790D2D8D70DF8ED806ECAB6F9FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717EE0C3AA2DC4F64B9482AE9904A814;
+			remoteInfo = IBMWatsonTextToSpeechV1;
+		};
+		9385BC1BC97D69BCE6064FB54260F6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C0C40D2B486C59711C6435A2CF518B8;
+			remoteInfo = "Pods-RiR_POC";
+		};
+		A6EC91B4E7E81BB215DDEB832CFE52F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B17C49233B25775B160A8CC034D01AE;
+			remoteInfo = IBMWatsonRestKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031EFE792A08D9AE480CD4E77820987B /* Pods-RiR_POCUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RiR_POCUITests-umbrella.h"; sourceTree = "<group>"; };
+		056DF786518D5DA5AA145431EE7F3D40 /* libopus_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopus_tts.a; path = Source/SupportingFiles/Dependencies/Libraries/libopus_tts.a; sourceTree = "<group>"; };
+		066FAAAD8244848B0AF0C6F235A687DB /* Pods-RiR_POCTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RiR_POCTests-umbrella.h"; sourceTree = "<group>"; };
+		07B7447CA7CA11CEA3F4919100727EDF /* opus_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_types.h; path = Source/SupportingFiles/Dependencies/Source/opus_types.h; sourceTree = "<group>"; };
+		096850CE2156B3B0DA7CE1098C1AA079 /* libogg_tts.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libogg_tts.a; path = Source/SupportingFiles/Dependencies/Libraries/libogg_tts.a; sourceTree = "<group>"; };
+		09D2E29E587CB0C9F24CD6179E4FA413 /* Pods-RiR_POCUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RiR_POCUITests-dummy.m"; sourceTree = "<group>"; };
+		0CEDEE42EC134018301C0628B2CAB412 /* RestResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestResponse.swift; path = Sources/RestKit/RestResponse.swift; sourceTree = "<group>"; };
+		0D854A92F652FA46D92733070A1A7D0F /* Pods-RiR_POCTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RiR_POCTests-dummy.m"; sourceTree = "<group>"; };
+		1C6E2D6255034A439406303A36071C62 /* Pods_RiR_POCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RiR_POCUITests.framework; path = "Pods-RiR_POCUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DB3ECA60C34070B13728B01359B8CDE /* Pods-RiR_POC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RiR_POC-dummy.m"; sourceTree = "<group>"; };
+		1F5EFD29BFE9BF699E921741B9A1D2B6 /* TextToSpeechDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechDecoder.swift; path = Source/TextToSpeechV1/TextToSpeechDecoder.swift; sourceTree = "<group>"; };
+		21347E8509763D28537507984056C614 /* InsecureConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InsecureConnection.swift; path = Source/SupportingFiles/InsecureConnection.swift; sourceTree = "<group>"; };
+		2794C9932F9846AA8DC594B58CE2F2D8 /* opus_header.c */ = {isa = PBXFileReference; includeInIndex = 1; name = opus_header.c; path = Source/SupportingFiles/Dependencies/Source/opus_header.c; sourceTree = "<group>"; };
+		2A46DE4A078BD87CA6C80C8CB54C72ED /* Voices.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voices.swift; path = Source/TextToSpeechV1/Models/Voices.swift; sourceTree = "<group>"; };
+		2A697D4D56A81036DB853FB99DA3D3F7 /* Voice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Voice.swift; path = Source/TextToSpeechV1/Models/Voice.swift; sourceTree = "<group>"; };
+		2D96C082C120ACC9E6AAF6427CC73854 /* WAVRepair.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WAVRepair.swift; path = Source/TextToSpeechV1/WAVRepair.swift; sourceTree = "<group>"; };
+		2FBD9887BA8B855C0AB99F741BE80EC4 /* Pods-RiR_POCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POCTests.release.xcconfig"; sourceTree = "<group>"; };
+		34B7C4D41E28398838BCD88701A7DEC0 /* Word.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Word.swift; path = Source/TextToSpeechV1/Models/Word.swift; sourceTree = "<group>"; };
+		36A9A7E990CE76D47BE8FF5791631DF2 /* IBMWatsonRestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonRestKit-dummy.m"; sourceTree = "<group>"; };
+		37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3B5E9ABCD92EDDF1293D51535CB820EB /* Pods-RiR_POC-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RiR_POC-frameworks.sh"; sourceTree = "<group>"; };
+		3D64D8FDF1C837FEE8A8378C52F0E0A3 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41546BCE501BC611CC8AC58117ED4DD6 /* Pods-RiR_POCUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RiR_POCUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41923B9569594F8B2E918A2C09B7DC9F /* IBMWatsonRestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-umbrella.h"; sourceTree = "<group>"; };
+		419E9BC11C204E07AA75A6FA565EEF3C /* Pronunciation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pronunciation.swift; path = Source/TextToSpeechV1/Models/Pronunciation.swift; sourceTree = "<group>"; };
+		43396921DCFE23239F9EBEDAAEFAB116 /* Pods-RiR_POCUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RiR_POCUITests.modulemap"; sourceTree = "<group>"; };
+		44509E1AEA2CC9A4E3F0106B715F73A4 /* CodableExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableExtensions.swift; path = Sources/RestKit/CodableExtensions.swift; sourceTree = "<group>"; };
+		44EAE4A2E4D3087231A7550C8E416597 /* Authentication.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Sources/RestKit/Authentication.swift; sourceTree = "<group>"; };
+		481AE1F7F1AA3B2E2D56D854BD2BF17A /* UpdateVoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateVoiceModel.swift; path = Source/TextToSpeechV1/Models/UpdateVoiceModel.swift; sourceTree = "<group>"; };
+		4955A3CD6211D8A4E29641A4B07D5A8C /* VoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceModel.swift; path = Source/TextToSpeechV1/Models/VoiceModel.swift; sourceTree = "<group>"; };
+		4D945E09FAE8093033EA91DF137236EB /* Pods-RiR_POCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POCUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FECA3B694E96FB5069676D4B4D63011 /* Pods-RiR_POC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RiR_POC.modulemap"; sourceTree = "<group>"; };
+		569F9281796D71F4A62B93B481467C6A /* IBMWatsonRestKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonRestKit-Info.plist"; sourceTree = "<group>"; };
+		5E59C1F74E9AD0264071B8E444E360B4 /* VoiceCustomization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceCustomization.swift; path = Source/TextToSpeechV1/Models/VoiceCustomization.swift; sourceTree = "<group>"; };
+		63BC710E87BF83E5ECA4D138466E841F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Sources/RestKit/MultipartFormData.swift; sourceTree = "<group>"; };
+		64CC3ECE555BCFB428FB51043779012E /* IBMWatsonTextToSpeechV1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IBMWatsonTextToSpeechV1-Info.plist"; sourceTree = "<group>"; };
+		6639D4FE6F97E461C0738A2A1FF494FD /* Pods-RiR_POCUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POCUITests-Info.plist"; sourceTree = "<group>"; };
+		6B1A31D5FF69A7216984FE042D9D72F5 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/RestKit/JSON.swift; sourceTree = "<group>"; };
+		6C15F96D78ED567307B5BFCB07A8A3A8 /* Pods-RiR_POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POC.debug.xcconfig"; sourceTree = "<group>"; };
+		71B03B0D784EAA61F3C34145CBFD8159 /* Pods-RiR_POC-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POC-acknowledgements.plist"; sourceTree = "<group>"; };
+		77E3F238B2BED7C1D8AFC3F89B07E162 /* IBMWatsonTextToSpeechV1-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-prefix.pch"; sourceTree = "<group>"; };
+		798CC766B9EBA3513F302D2AF1963305 /* IBMWatsonRestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonRestKit-prefix.pch"; sourceTree = "<group>"; };
+		7BA5AB5D7435FD0E7B2ADC292D07F7EF /* Pods-RiR_POCUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POCUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F86CA426BD42890DADEA7922D440577 /* Pods-RiR_POCTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RiR_POCTests.modulemap"; sourceTree = "<group>"; };
+		7F9D3545D3FEEF3E85745473E89BC987 /* VoiceModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceModels.swift; path = Source/TextToSpeechV1/Models/VoiceModels.swift; sourceTree = "<group>"; };
+		8439F206B15694B4216C4D4B829CF77E /* IBMWatsonTextToSpeechV1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonTextToSpeechV1.modulemap; sourceTree = "<group>"; };
+		8A32E9FDA3AB33EC421F78C90CFC5D26 /* Pods_RiR_POCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RiR_POCTests.framework; path = "Pods-RiR_POCTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC170B6D6848FCFEE9C85A4C2C535FF /* IBMWatsonTextToSpeechV1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IBMWatsonTextToSpeechV1-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2EB4D8A9B9C0E28989ED16CB69B35FF /* opus_header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_header.h; path = Source/SupportingFiles/Dependencies/Source/opus_header.h; sourceTree = "<group>"; };
+		AC59A2794A5F14321EB9A322A0BD6375 /* IBMWatsonTextToSpeechV1.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonTextToSpeechV1.xcconfig; sourceTree = "<group>"; };
+		B06E92D6E4F51FF7663B95A753DD2810 /* CreateVoiceModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateVoiceModel.swift; path = Source/TextToSpeechV1/Models/CreateVoiceModel.swift; sourceTree = "<group>"; };
+		B2B0D83139008F53C86BAD8921307A82 /* Pods-RiR_POC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RiR_POC-umbrella.h"; sourceTree = "<group>"; };
+		B7BB343F13FBCE4FC7621DDF2D0D9FE6 /* Pods-RiR_POC-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POC-Info.plist"; sourceTree = "<group>"; };
+		B8A4EFC03AF64EFEF97C267038C803BB /* Pods-RiR_POCTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POCTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6575D7D7391EA23B30CB5736C02E46 /* RestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestError.swift; path = Sources/RestKit/RestError.swift; sourceTree = "<group>"; };
+		BF68699F77C78B74E6137D20C6476D6F /* SupportedFeatures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SupportedFeatures.swift; path = Source/TextToSpeechV1/Models/SupportedFeatures.swift; sourceTree = "<group>"; };
+		C24E308CBE45D88507F4E91F292F4581 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Source/SupportingFiles/Shared.swift; sourceTree = "<group>"; };
+		C617C8BEDACE4B2B8444E1EEFF5D7831 /* IBMWatsonRestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IBMWatsonRestKit.xcconfig; sourceTree = "<group>"; };
+		C75FBCE1D68A7BEEBCA3762C138324AC /* Words.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Words.swift; path = Source/TextToSpeechV1/Models/Words.swift; sourceTree = "<group>"; };
+		C8106494571450B8497C8A715BA8B2ED /* Pods-RiR_POCTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RiR_POCTests-Info.plist"; sourceTree = "<group>"; };
+		CA2B11816DEABAAEF76F7F77A1CAA5E8 /* Pods-RiR_POCTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RiR_POCTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCA631AB9FEBA4690A873CA2A0956BF0 /* Pods-RiR_POCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD71299A03B13DD8B3AADFC984998E89 /* Pods-RiR_POC-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RiR_POC-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2E56A3D68BBB2108674EB80DC785F2C /* opus_multistream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_multistream.h; path = Source/SupportingFiles/Dependencies/Source/opus_multistream.h; sourceTree = "<group>"; };
+		D55E35CA49496465F74DD7B9C151D0F4 /* TextToSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TextToSpeech.framework; path = IBMWatsonTextToSpeechV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC3914CF7CB8BA1926E1CE67F18BF5B /* Translation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Translation.swift; path = Source/TextToSpeechV1/Models/Translation.swift; sourceTree = "<group>"; };
+		DBE400ADDE48C14AE3516F5B0FA2DE7D /* opus_defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus_defines.h; path = Source/SupportingFiles/Dependencies/Source/opus_defines.h; sourceTree = "<group>"; };
+		DED6050D709C1EFAD9E5629D7B173242 /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/TextToSpeechV1/Models/Text.swift; sourceTree = "<group>"; };
+		DF67E073924CE899EBEAEC3BCE5384A9 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RestKit.framework; path = IBMWatsonRestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C89D459E7C539BB6671AF722F042B7 /* IBMWatsonTextToSpeechV1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IBMWatsonTextToSpeechV1-dummy.m"; sourceTree = "<group>"; };
+		E20E636A247115D3ACFF8121C2651975 /* Pods-RiR_POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POC.release.xcconfig"; sourceTree = "<group>"; };
+		E2814B68FDBEB992F807A973E17933BD /* ogg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ogg.h; path = Source/SupportingFiles/Dependencies/Source/ogg.h; sourceTree = "<group>"; };
+		E308543E85343190EE07CF4D74620131 /* RestRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RestRequest.swift; path = Sources/RestKit/RestRequest.swift; sourceTree = "<group>"; };
+		E8413084B2D1EBA8D4701C89906D0BD8 /* Pods_RiR_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RiR_POC.framework; path = "Pods-RiR_POC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8EA5363A80AC95FD9655148CE5ECC50 /* os_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = os_types.h; path = Source/SupportingFiles/Dependencies/Source/os_types.h; sourceTree = "<group>"; };
+		EB2F887E267AC15B698447DF9545030A /* opus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opus.h; path = Source/SupportingFiles/Dependencies/Source/opus.h; sourceTree = "<group>"; };
+		EB981741400BE32947BA0DBD85C78341 /* TextToSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeech.swift; path = Source/TextToSpeechV1/TextToSpeech.swift; sourceTree = "<group>"; };
+		F3906E29196A0FDC3F9D9C9417B73124 /* Pods-RiR_POCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RiR_POCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA689230265B365FF495C08B3DB0D72A /* IBMWatsonRestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IBMWatsonRestKit.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B9F7A4288B083380F04094AB1862ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F772501C84BED58A0D438BE6C72A24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81BBF1F1C875B17ECD0BC746D469B444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B34E2B75C177D9136DD0056C395E03F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932B65477A6C41E106567871967AED5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3163A4223F3175B994E25777EFF9B203 /* Foundation.framework in Frameworks */,
+				624B8FDEB17AB97079E3C196BC858276 /* RestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB11364715AB50C8119E159171E753DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				397C975FE474C4C8CB51A76097B7937F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C61BD44FF2A99E0433902B0FA81B87A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8ACE13B665EFFD75931B583586C4A21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013B62587044FCEE82AF4865D4F670BE /* Pods-RiR_POCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43396921DCFE23239F9EBEDAAEFAB116 /* Pods-RiR_POCUITests.modulemap */,
+				41546BCE501BC611CC8AC58117ED4DD6 /* Pods-RiR_POCUITests-acknowledgements.markdown */,
+				7BA5AB5D7435FD0E7B2ADC292D07F7EF /* Pods-RiR_POCUITests-acknowledgements.plist */,
+				09D2E29E587CB0C9F24CD6179E4FA413 /* Pods-RiR_POCUITests-dummy.m */,
+				6639D4FE6F97E461C0738A2A1FF494FD /* Pods-RiR_POCUITests-Info.plist */,
+				031EFE792A08D9AE480CD4E77820987B /* Pods-RiR_POCUITests-umbrella.h */,
+				F3906E29196A0FDC3F9D9C9417B73124 /* Pods-RiR_POCUITests.debug.xcconfig */,
+				4D945E09FAE8093033EA91DF137236EB /* Pods-RiR_POCUITests.release.xcconfig */,
+			);
+			name = "Pods-RiR_POCUITests";
+			path = "Target Support Files/Pods-RiR_POCUITests";
+			sourceTree = "<group>";
+		};
+		2897D79AABB914D170F8E13A7452FC7E /* Pods-RiR_POC */ = {
+			isa = PBXGroup;
+			children = (
+				4FECA3B694E96FB5069676D4B4D63011 /* Pods-RiR_POC.modulemap */,
+				CD71299A03B13DD8B3AADFC984998E89 /* Pods-RiR_POC-acknowledgements.markdown */,
+				71B03B0D784EAA61F3C34145CBFD8159 /* Pods-RiR_POC-acknowledgements.plist */,
+				1DB3ECA60C34070B13728B01359B8CDE /* Pods-RiR_POC-dummy.m */,
+				3B5E9ABCD92EDDF1293D51535CB820EB /* Pods-RiR_POC-frameworks.sh */,
+				B7BB343F13FBCE4FC7621DDF2D0D9FE6 /* Pods-RiR_POC-Info.plist */,
+				B2B0D83139008F53C86BAD8921307A82 /* Pods-RiR_POC-umbrella.h */,
+				6C15F96D78ED567307B5BFCB07A8A3A8 /* Pods-RiR_POC.debug.xcconfig */,
+				E20E636A247115D3ACFF8121C2651975 /* Pods-RiR_POC.release.xcconfig */,
+			);
+			name = "Pods-RiR_POC";
+			path = "Target Support Files/Pods-RiR_POC";
+			sourceTree = "<group>";
+		};
+		3016BD61173C7F1C108256CCCB6DE809 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				096850CE2156B3B0DA7CE1098C1AA079 /* libogg_tts.a */,
+				056DF786518D5DA5AA145431EE7F3D40 /* libopus_tts.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40D60E45E0F8F4D377A51180448B04EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63B9ADD7C192FB05A8CDCDF88B31DCE7 /* IBMWatsonRestKit */,
+				A2D8159A616BEBACC6E1EA7109D7D25D /* IBMWatsonTextToSpeechV1 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		63B9ADD7C192FB05A8CDCDF88B31DCE7 /* IBMWatsonRestKit */ = {
+			isa = PBXGroup;
+			children = (
+				44EAE4A2E4D3087231A7550C8E416597 /* Authentication.swift */,
+				44509E1AEA2CC9A4E3F0106B715F73A4 /* CodableExtensions.swift */,
+				6B1A31D5FF69A7216984FE042D9D72F5 /* JSON.swift */,
+				63BC710E87BF83E5ECA4D138466E841F /* MultipartFormData.swift */,
+				BA6575D7D7391EA23B30CB5736C02E46 /* RestError.swift */,
+				E308543E85343190EE07CF4D74620131 /* RestRequest.swift */,
+				0CEDEE42EC134018301C0628B2CAB412 /* RestResponse.swift */,
+				945AC377605540829043C84FF2B84061 /* Support Files */,
+			);
+			name = IBMWatsonRestKit;
+			path = IBMWatsonRestKit;
+			sourceTree = "<group>";
+		};
+		686004732E038705513D27DAA408A1C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8413084B2D1EBA8D4701C89906D0BD8 /* Pods_RiR_POC.framework */,
+				8A32E9FDA3AB33EC421F78C90CFC5D26 /* Pods_RiR_POCTests.framework */,
+				1C6E2D6255034A439406303A36071C62 /* Pods_RiR_POCUITests.framework */,
+				DF67E073924CE899EBEAEC3BCE5384A9 /* RestKit.framework */,
+				D55E35CA49496465F74DD7B9C151D0F4 /* TextToSpeech.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		945AC377605540829043C84FF2B84061 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA689230265B365FF495C08B3DB0D72A /* IBMWatsonRestKit.modulemap */,
+				C617C8BEDACE4B2B8444E1EEFF5D7831 /* IBMWatsonRestKit.xcconfig */,
+				36A9A7E990CE76D47BE8FF5791631DF2 /* IBMWatsonRestKit-dummy.m */,
+				569F9281796D71F4A62B93B481467C6A /* IBMWatsonRestKit-Info.plist */,
+				798CC766B9EBA3513F302D2AF1963305 /* IBMWatsonRestKit-prefix.pch */,
+				41923B9569594F8B2E918A2C09B7DC9F /* IBMWatsonRestKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonRestKit";
+			sourceTree = "<group>";
+		};
+		A2D8159A616BEBACC6E1EA7109D7D25D /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXGroup;
+			children = (
+				B06E92D6E4F51FF7663B95A753DD2810 /* CreateVoiceModel.swift */,
+				21347E8509763D28537507984056C614 /* InsecureConnection.swift */,
+				E2814B68FDBEB992F807A973E17933BD /* ogg.h */,
+				EB2F887E267AC15B698447DF9545030A /* opus.h */,
+				DBE400ADDE48C14AE3516F5B0FA2DE7D /* opus_defines.h */,
+				2794C9932F9846AA8DC594B58CE2F2D8 /* opus_header.c */,
+				A2EB4D8A9B9C0E28989ED16CB69B35FF /* opus_header.h */,
+				D2E56A3D68BBB2108674EB80DC785F2C /* opus_multistream.h */,
+				07B7447CA7CA11CEA3F4919100727EDF /* opus_types.h */,
+				E8EA5363A80AC95FD9655148CE5ECC50 /* os_types.h */,
+				419E9BC11C204E07AA75A6FA565EEF3C /* Pronunciation.swift */,
+				C24E308CBE45D88507F4E91F292F4581 /* Shared.swift */,
+				BF68699F77C78B74E6137D20C6476D6F /* SupportedFeatures.swift */,
+				DED6050D709C1EFAD9E5629D7B173242 /* Text.swift */,
+				EB981741400BE32947BA0DBD85C78341 /* TextToSpeech.swift */,
+				1F5EFD29BFE9BF699E921741B9A1D2B6 /* TextToSpeechDecoder.swift */,
+				DBC3914CF7CB8BA1926E1CE67F18BF5B /* Translation.swift */,
+				481AE1F7F1AA3B2E2D56D854BD2BF17A /* UpdateVoiceModel.swift */,
+				2A697D4D56A81036DB853FB99DA3D3F7 /* Voice.swift */,
+				5E59C1F74E9AD0264071B8E444E360B4 /* VoiceCustomization.swift */,
+				4955A3CD6211D8A4E29641A4B07D5A8C /* VoiceModel.swift */,
+				7F9D3545D3FEEF3E85745473E89BC987 /* VoiceModels.swift */,
+				2A46DE4A078BD87CA6C80C8CB54C72ED /* Voices.swift */,
+				2D96C082C120ACC9E6AAF6427CC73854 /* WAVRepair.swift */,
+				34B7C4D41E28398838BCD88701A7DEC0 /* Word.swift */,
+				C75FBCE1D68A7BEEBCA3762C138324AC /* Words.swift */,
+				3016BD61173C7F1C108256CCCB6DE809 /* Frameworks */,
+				EB8DE9E34C37F94634B24F4FC150079C /* Support Files */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			path = IBMWatsonTextToSpeechV1;
+			sourceTree = "<group>";
+		};
+		AAFEE43964B7F2DA7A0E643A9EAADFB3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37B27F252182F387DCABDD73CF347E69 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AD89DB18C71BCDEC4D165D6A85D494E2 /* Pods-RiR_POCTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F86CA426BD42890DADEA7922D440577 /* Pods-RiR_POCTests.modulemap */,
+				CA2B11816DEABAAEF76F7F77A1CAA5E8 /* Pods-RiR_POCTests-acknowledgements.markdown */,
+				B8A4EFC03AF64EFEF97C267038C803BB /* Pods-RiR_POCTests-acknowledgements.plist */,
+				0D854A92F652FA46D92733070A1A7D0F /* Pods-RiR_POCTests-dummy.m */,
+				C8106494571450B8497C8A715BA8B2ED /* Pods-RiR_POCTests-Info.plist */,
+				066FAAAD8244848B0AF0C6F235A687DB /* Pods-RiR_POCTests-umbrella.h */,
+				CCA631AB9FEBA4690A873CA2A0956BF0 /* Pods-RiR_POCTests.debug.xcconfig */,
+				2FBD9887BA8B855C0AB99F741BE80EC4 /* Pods-RiR_POCTests.release.xcconfig */,
+			);
+			name = "Pods-RiR_POCTests";
+			path = "Target Support Files/Pods-RiR_POCTests";
+			sourceTree = "<group>";
+		};
+		B474D439C5E71C7306FD4E2199E47707 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2897D79AABB914D170F8E13A7452FC7E /* Pods-RiR_POC */,
+				AD89DB18C71BCDEC4D165D6A85D494E2 /* Pods-RiR_POCTests */,
+				013B62587044FCEE82AF4865D4F670BE /* Pods-RiR_POCUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				E6A969088F64E6C80F96339EAD57585C /* Frameworks */,
+				40D60E45E0F8F4D377A51180448B04EB /* Pods */,
+				686004732E038705513D27DAA408A1C5 /* Products */,
+				B474D439C5E71C7306FD4E2199E47707 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E6A969088F64E6C80F96339EAD57585C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D64D8FDF1C837FEE8A8378C52F0E0A3 /* RestKit.framework */,
+				AAFEE43964B7F2DA7A0E643A9EAADFB3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB8DE9E34C37F94634B24F4FC150079C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8439F206B15694B4216C4D4B829CF77E /* IBMWatsonTextToSpeechV1.modulemap */,
+				AC59A2794A5F14321EB9A322A0BD6375 /* IBMWatsonTextToSpeechV1.xcconfig */,
+				E1C89D459E7C539BB6671AF722F042B7 /* IBMWatsonTextToSpeechV1-dummy.m */,
+				64CC3ECE555BCFB428FB51043779012E /* IBMWatsonTextToSpeechV1-Info.plist */,
+				77E3F238B2BED7C1D8AFC3F89B07E162 /* IBMWatsonTextToSpeechV1-prefix.pch */,
+				9BC170B6D6848FCFEE9C85A4C2C535FF /* IBMWatsonTextToSpeechV1-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IBMWatsonTextToSpeechV1";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07A83FA5BF19220DFBBE1BD18D3BE6FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE2ECF3825795DC82847C6C77DB79F2 /* Pods-RiR_POCTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F792D6886743C890FF38711DE95631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5532115D73B71B131602D6A002C42596 /* Pods-RiR_POCUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89D2798EAB432C05185428A539FCDE10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				381B2BA08C0929BE0C2ED6C10DF2C59C /* Pods-RiR_POC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A086D0BD783C06A608138857548F4D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B241F7B0025D4948DF4751372D5773 /* IBMWatsonTextToSpeechV1-umbrella.h in Headers */,
+				F478FBA6F92AB10B379262A5DA7A02A0 /* ogg.h in Headers */,
+				F5E35B1A82530F99FC3816B5C0BA7489 /* opus.h in Headers */,
+				B2C3AA6AD860AC2818E612F40539894A /* opus_defines.h in Headers */,
+				56269B357BADB4C2792A2B9EB6C0516F /* opus_header.h in Headers */,
+				209FA439C729A7AB68B75AFB2E756102 /* opus_multistream.h in Headers */,
+				10CEEE35F940B1DC5671E886EDACE682 /* opus_types.h in Headers */,
+				CF614881CFDE454FBC64F748457FF627 /* os_types.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E081E256D9DD494CE1352F8FF948E7E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90D9C0FF1A1FFA8FE4A4C0AD2B6D250B /* IBMWatsonRestKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A64CD195B39418EEB1CF4450A23887B /* Pods-RiR_POCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAB70A47567C6CABBA4FFCAD01BF0B1 /* Build configuration list for PBXNativeTarget "Pods-RiR_POCUITests" */;
+			buildPhases = (
+				59F792D6886743C890FF38711DE95631 /* Headers */,
+				19B07A1F0192BA65149D53E9AFAE9C3B /* Sources */,
+				81BBF1F1C875B17ECD0BC746D469B444 /* Frameworks */,
+				7185DF927007FA08AB2E1DACEFD97607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E24A96D9F1EDA3F94E36E5350D78DA7A /* PBXTargetDependency */,
+			);
+			name = "Pods-RiR_POCUITests";
+			productName = "Pods-RiR_POCUITests";
+			productReference = 1C6E2D6255034A439406303A36071C62 /* Pods_RiR_POCUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C0C40D2B486C59711C6435A2CF518B8 /* Pods-RiR_POC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1A6624DD4946FC697379ED150B5A94 /* Build configuration list for PBXNativeTarget "Pods-RiR_POC" */;
+			buildPhases = (
+				89D2798EAB432C05185428A539FCDE10 /* Headers */,
+				D5B9C8C7D2A3FFEF900A3501E2239438 /* Sources */,
+				2B9F7A4288B083380F04094AB1862ED3 /* Frameworks */,
+				C2063D9BE4221A041C28008D2E27EA7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF0D24E971724E3A41797B6DE892CE3 /* PBXTargetDependency */,
+				37D85C8E0A2EB22C11EE08D1CD0F5750 /* PBXTargetDependency */,
+			);
+			name = "Pods-RiR_POC";
+			productName = "Pods-RiR_POC";
+			productReference = E8413084B2D1EBA8D4701C89906D0BD8 /* Pods_RiR_POC.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		717EE0C3AA2DC4F64B9482AE9904A814 /* IBMWatsonTextToSpeechV1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDF55FC19FC2476FF4707DF0E6E049A /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */;
+			buildPhases = (
+				9A086D0BD783C06A608138857548F4D2 /* Headers */,
+				F3E1B73788E80367A7EABFE161F49E5B /* Sources */,
+				932B65477A6C41E106567871967AED5E /* Frameworks */,
+				9E0E103B1F64420BD50BBDA4DD0EDDF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9FB868533D8C74FFFE370E1607CE64F /* PBXTargetDependency */,
+			);
+			name = IBMWatsonTextToSpeechV1;
+			productName = IBMWatsonTextToSpeechV1;
+			productReference = D55E35CA49496465F74DD7B9C151D0F4 /* TextToSpeech.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B17C49233B25775B160A8CC034D01AE /* IBMWatsonRestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D31BE9C19A60B5C32C544C9208DE215A /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */;
+			buildPhases = (
+				E081E256D9DD494CE1352F8FF948E7E0 /* Headers */,
+				FF507F34C117A502DEBE3EAFC9FB681B /* Sources */,
+				C61BD44FF2A99E0433902B0FA81B87A9 /* Frameworks */,
+				0C3388FAC8376B8B251E4DAE368A384B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IBMWatsonRestKit;
+			productName = IBMWatsonRestKit;
+			productReference = DF67E073924CE899EBEAEC3BCE5384A9 /* RestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F411FDD48F043711B3A4D18D4D26A541 /* Pods-RiR_POCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30697A6AC4DB37FCA48FA3F70EB77409 /* Build configuration list for PBXNativeTarget "Pods-RiR_POCTests" */;
+			buildPhases = (
+				07A83FA5BF19220DFBBE1BD18D3BE6FC /* Headers */,
+				E0711C26B2975361D21715385A6CED83 /* Sources */,
+				AB11364715AB50C8119E159171E753DB /* Frameworks */,
+				769055EF7103649D9FC15E3DE3FCA869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				402CFF9FA02880C87C6F48B8E2C41B0D /* PBXTargetDependency */,
+			);
+			name = "Pods-RiR_POCTests";
+			productName = "Pods-RiR_POCTests";
+			productReference = 8A32E9FDA3AB33EC421F78C90CFC5D26 /* Pods_RiR_POCTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 686004732E038705513D27DAA408A1C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B17C49233B25775B160A8CC034D01AE /* IBMWatsonRestKit */,
+				717EE0C3AA2DC4F64B9482AE9904A814 /* IBMWatsonTextToSpeechV1 */,
+				5C0C40D2B486C59711C6435A2CF518B8 /* Pods-RiR_POC */,
+				F411FDD48F043711B3A4D18D4D26A541 /* Pods-RiR_POCTests */,
+				4A64CD195B39418EEB1CF4450A23887B /* Pods-RiR_POCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C3388FAC8376B8B251E4DAE368A384B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7185DF927007FA08AB2E1DACEFD97607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		769055EF7103649D9FC15E3DE3FCA869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E0E103B1F64420BD50BBDA4DD0EDDF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2063D9BE4221A041C28008D2E27EA7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19B07A1F0192BA65149D53E9AFAE9C3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A96705F3C7AF79D396E903200F948D /* Pods-RiR_POCUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B9C8C7D2A3FFEF900A3501E2239438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB657CE8D291268BDCB8571033FBE252 /* Pods-RiR_POC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0711C26B2975361D21715385A6CED83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5A9B96259B186794FF968FA02CACA9 /* Pods-RiR_POCTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E1B73788E80367A7EABFE161F49E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F413D6A04C77FB94FF9755596549AED /* CreateVoiceModel.swift in Sources */,
+				19A93C32D67A9C46D41DB808AB49BD55 /* IBMWatsonTextToSpeechV1-dummy.m in Sources */,
+				632FE5C53B4680E3F80B3C850AEE9562 /* InsecureConnection.swift in Sources */,
+				D80F2749630DA8BDC8D8AABE8447A22C /* opus_header.c in Sources */,
+				BCAB2C0707872620769CA8449BB5EACA /* Pronunciation.swift in Sources */,
+				E04392C334B479E37456C48AA6965790 /* Shared.swift in Sources */,
+				78021AB40CDE97C21C22C43367CD7716 /* SupportedFeatures.swift in Sources */,
+				2E88720DEBF80D634C384561FF07961B /* Text.swift in Sources */,
+				40F5E7EAC31BF5238F0A0E12C8C35E22 /* TextToSpeech.swift in Sources */,
+				520DC82CE7C257C33D00E6F986AD0375 /* TextToSpeechDecoder.swift in Sources */,
+				FF9890595B8CEAE99DB121A385FB9653 /* Translation.swift in Sources */,
+				B2B2D5DEA82DFA0B1BB1F6BD810E7693 /* UpdateVoiceModel.swift in Sources */,
+				4F233D5D83D95DC360FD5AF2892DDE78 /* Voice.swift in Sources */,
+				65AC540CD1C21A1C4FD1EB3932F3AF76 /* VoiceCustomization.swift in Sources */,
+				8958002D548CEBDAD88786ADD644E93E /* VoiceModel.swift in Sources */,
+				3D2E91BBFC80E83237568F5BD19877AC /* VoiceModels.swift in Sources */,
+				68D2337E8606842BB46721F610D565AB /* Voices.swift in Sources */,
+				F878788CD620769D4828FBB8D3200BEA /* WAVRepair.swift in Sources */,
+				CAE12BE5AC49562D5BCCD900C35848EA /* Word.swift in Sources */,
+				F54A775388A04FE263EC55C022477B22 /* Words.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF507F34C117A502DEBE3EAFC9FB681B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8558967FEAD09FF137DF0F395CC401E0 /* Authentication.swift in Sources */,
+				753D162790DF06A78F31A037F27B354D /* CodableExtensions.swift in Sources */,
+				A365EF5FB731C3D6FB9715B4BF14C453 /* IBMWatsonRestKit-dummy.m in Sources */,
+				99E2C656543A223448087E5B8E21B46C /* JSON.swift in Sources */,
+				A656EF72CFAF1C6B59AA4A4588D223C5 /* MultipartFormData.swift in Sources */,
+				0D4B5A9477213252FCCDA21A3F3331B4 /* RestError.swift in Sources */,
+				05687FC7EC7BA20D33F843FE5CBA3E99 /* RestRequest.swift in Sources */,
+				7A3B0AB729C7645D6C646A2AC1580970 /* RestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37D85C8E0A2EB22C11EE08D1CD0F5750 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonTextToSpeechV1;
+			target = 717EE0C3AA2DC4F64B9482AE9904A814 /* IBMWatsonTextToSpeechV1 */;
+			targetProxy = 4130790D2D8D70DF8ED806ECAB6F9FED /* PBXContainerItemProxy */;
+		};
+		402CFF9FA02880C87C6F48B8E2C41B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RiR_POC";
+			target = 5C0C40D2B486C59711C6435A2CF518B8 /* Pods-RiR_POC */;
+			targetProxy = 9385BC1BC97D69BCE6064FB54260F6A6 /* PBXContainerItemProxy */;
+		};
+		CBF0D24E971724E3A41797B6DE892CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = 7B17C49233B25775B160A8CC034D01AE /* IBMWatsonRestKit */;
+			targetProxy = 0AD9E59CE9E6D10A4263F68801533A65 /* PBXContainerItemProxy */;
+		};
+		E24A96D9F1EDA3F94E36E5350D78DA7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RiR_POC";
+			target = 5C0C40D2B486C59711C6435A2CF518B8 /* Pods-RiR_POC */;
+			targetProxy = 0026BD3157D2762FF1DEC7D3B665E695 /* PBXContainerItemProxy */;
+		};
+		E9FB868533D8C74FFFE370E1607CE64F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IBMWatsonRestKit;
+			target = 7B17C49233B25775B160A8CC034D01AE /* IBMWatsonRestKit */;
+			targetProxy = A6EC91B4E7E81BB215DDEB832CFE52F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		085EA3FDEDEB51E0F6AC6F514AE13895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C617C8BEDACE4B2B8444E1EEFF5D7831 /* IBMWatsonRestKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		31C551C8616DE7FB54F1AFDF7CF19356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3906E29196A0FDC3F9D9C9417B73124 /* Pods-RiR_POCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POCUITests/Pods-RiR_POCUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POCUITests/Pods-RiR_POCUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3293684A119AA3EBA41026868881E05D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBD9887BA8B855C0AB99F741BE80EC4 /* Pods-RiR_POCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		73C56D126566034DC2A3AC6310D9A5AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C15F96D78ED567307B5BFCB07A8A3A8 /* Pods-RiR_POC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POC/Pods-RiR_POC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POC/Pods-RiR_POC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BEB08CA82E040BDB05865E681280AB7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC59A2794A5F14321EB9A322A0BD6375 /* IBMWatsonTextToSpeechV1.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0A66F49BFC3E5EDC2298553E4F0B99C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20E636A247115D3ACFF8121C2651975 /* Pods-RiR_POC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POC/Pods-RiR_POC-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POC/Pods-RiR_POC.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C705800A35BC469AA5055D697924D22A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCA631AB9FEBA4690A873CA2A0956BF0 /* Pods-RiR_POCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB66D085A9891D7411BB77102EA4780A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D945E09FAE8093033EA91DF137236EB /* Pods-RiR_POCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RiR_POCUITests/Pods-RiR_POCUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RiR_POCUITests/Pods-RiR_POCUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0B913A860C2B26ABC7237035AAEB678 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC59A2794A5F14321EB9A322A0BD6375 /* IBMWatsonTextToSpeechV1.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonTextToSpeechV1/IBMWatsonTextToSpeechV1.modulemap";
+				PRODUCT_MODULE_NAME = TextToSpeech;
+				PRODUCT_NAME = TextToSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F9563F785A8F4BD678BD1C6185E4F61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C617C8BEDACE4B2B8444E1EEFF5D7831 /* IBMWatsonRestKit.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IBMWatsonRestKit/IBMWatsonRestKit.modulemap";
+				PRODUCT_MODULE_NAME = RestKit;
+				PRODUCT_NAME = RestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30697A6AC4DB37FCA48FA3F70EB77409 /* Build configuration list for PBXNativeTarget "Pods-RiR_POCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C705800A35BC469AA5055D697924D22A /* Debug */,
+				3293684A119AA3EBA41026868881E05D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D31BE9C19A60B5C32C544C9208DE215A /* Build configuration list for PBXNativeTarget "IBMWatsonRestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085EA3FDEDEB51E0F6AC6F514AE13895 /* Debug */,
+				F9563F785A8F4BD678BD1C6185E4F61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDAB70A47567C6CABBA4FFCAD01BF0B1 /* Build configuration list for PBXNativeTarget "Pods-RiR_POCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C551C8616DE7FB54F1AFDF7CF19356 /* Debug */,
+				DB66D085A9891D7411BB77102EA4780A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDF55FC19FC2476FF4707DF0E6E049A /* Build configuration list for PBXNativeTarget "IBMWatsonTextToSpeechV1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0B913A860C2B26ABC7237035AAEB678 /* Debug */,
+				BEB08CA82E040BDB05865E681280AB7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1A6624DD4946FC697379ED150B5A94 /* Build configuration list for PBXNativeTarget "Pods-RiR_POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73C56D126566034DC2A3AC6310D9A5AC /* Debug */,
+				C0A66F49BFC3E5EDC2298553E4F0B99C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

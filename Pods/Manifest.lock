@@ -1,0 +1,20 @@
+PODS:
+  - IBMWatsonRestKit (3.0.3)
+  - IBMWatsonTextToSpeechV1 (2.1.0):
+    - IBMWatsonRestKit (~> 3.0.0)
+
+DEPENDENCIES:
+  - IBMWatsonTextToSpeechV1 (~> 2.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IBMWatsonRestKit
+    - IBMWatsonTextToSpeechV1
+
+SPEC CHECKSUMS:
+  IBMWatsonRestKit: 47dcac7ccc12e0d15a948b79e481e0e0abacb057
+  IBMWatsonTextToSpeechV1: f00763484984385317a1bd4bf9642753f83d64e6
+
+PODFILE CHECKSUM: e791dbce0a86754cba1f24cff1ef9dc3ebbcaced
+
+COCOAPODS: 1.6.1
