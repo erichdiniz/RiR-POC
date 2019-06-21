@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+    @IBOutlet weak var btnNext: UIButton!
+    
+    @IBAction func backButton(segue: UIStoryboardSegue,_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        btnNext?.layer.cornerRadius = 24
+        btnNext?.clipsToBounds = true
     }
-
-
+    
 }
 

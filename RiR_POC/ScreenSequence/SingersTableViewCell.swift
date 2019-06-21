@@ -10,6 +10,8 @@ import UIKit
 
 class SingersTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var singerImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

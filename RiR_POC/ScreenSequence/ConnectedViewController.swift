@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotConnectedViewController: UIViewController {
+class ConnectedViewController: UIViewController {
 
     var imageNames = ["drake","cardib", "rexha", "alok"]
     
@@ -25,16 +25,17 @@ class NotConnectedViewController: UIViewController {
     @IBOutlet weak var lblQuestion1: UILabel!
     @IBOutlet weak var lblAnswer1: UILabel!
     @IBOutlet weak var btnQuestion1: UIButton!
+    @IBOutlet weak var btnNext1: UIButton!
     
     @IBOutlet weak var btnNext: UIButton!
-    
+
     @IBOutlet weak var btnTwoSevenStage: UIButton!
     @IBOutlet weak var btnFourTenStage: UIButton!
     @IBOutlet weak var btnSixTenStage: UIButton!
     
     let btnColorDeselected = UIColor(rgb: 0x3C134C)
     let btnColorSelected = UIColor(rgb: 0xE64484)
-    
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -51,7 +52,8 @@ class NotConnectedViewController: UIViewController {
         
         btnNext?.layer.cornerRadius = 24
         btnNext?.clipsToBounds = true
-        
+        btnNext1?.layer.cornerRadius = 24
+        btnNext1?.clipsToBounds = true
         
         btnTwoSeven?.layer.cornerRadius = 24
         btnTwoSeven?.clipsToBounds = true
@@ -111,8 +113,19 @@ class NotConnectedViewController: UIViewController {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     self.lblAnswer1.isHidden = false
                     self.btnQuestion1.isHidden = false
+
+
                 }
                 
+                DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                     button.setImage(UIImage(named: "microphone"), for: .selected)
+                    self.imgFreq.image = UIImage(named: "voice_stop")
+                    self.lblQuestion1.isHidden = true
+                    self.lblAnswer1.isHidden = true
+                    self.btnQuestion1.isHidden = true
+                    self.btnNext1.isHidden = false
+                    
+                }
 
                 
             }
@@ -124,6 +137,8 @@ class NotConnectedViewController: UIViewController {
                 lblQuestion1.isHidden = true
                 lblAnswer1.isHidden = true
                 btnQuestion1.isHidden = true
+                btnNext1.isHidden = true
+
                 
             }
         }
@@ -146,10 +161,10 @@ class NotConnectedViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            performSegue(withIdentifier: “BruceTheHoon”, sender: self)
-
-
+            self.lblAnswer1.isHidden = true
+            self.btnQuestion1.isHidden = true
         }
+
     }
     
 }
@@ -172,7 +187,7 @@ extension UIColor {
     }
 }
 
-extension NotConnectedViewController: UITableViewDataSource {
+extension ConnectedViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
