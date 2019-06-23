@@ -11,6 +11,7 @@
 		3024AC4822BA7ED6005B9B36 /* Connected2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3024AC4722BA7ED6005B9B36 /* Connected2ViewController.swift */; };
 		3024AC4A22BA9350005B9B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024AC4922BA9350005B9B36 /* Assets.xcassets */; };
 		306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */; };
+		30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9303122BFBE1500C21F41 /* Connected3ViewController.swift */; };
 		30F5D23622B8039A00090C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D23522B8039A00090C11 /* AppDelegate.swift */; };
 		30F5D23822B8039A00090C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D23722B8039A00090C11 /* ViewController.swift */; };
 		30F5D23B22B8039A00090C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F5D23922B8039A00090C11 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		3024AC4722BA7ED6005B9B36 /* Connected2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connected2ViewController.swift; sourceTree = "<group>"; };
 		3024AC4922BA9350005B9B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingersTableViewCell.swift; sourceTree = "<group>"; };
+		30A9303122BFBE1500C21F41 /* Connected3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connected3ViewController.swift; sourceTree = "<group>"; };
 		30F5D23222B8039A00090C11 /* RiR_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiR_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F5D23522B8039A00090C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F5D23722B8039A00090C11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				30F5D26922B815BB00090C11 /* NotConnectedViewController.swift */,
 				306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */,
 				3024AC4722BA7ED6005B9B36 /* Connected2ViewController.swift */,
+				30A9303122BFBE1500C21F41 /* Connected3ViewController.swift */,
 			);
 			path = ScreenSequence;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */,
 				76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */,
 				30F5D26822B8149D00090C11 /* ConnectedViewController.swift in Sources */,
+				30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */,
 				30F5D23E22B8039B00090C11 /* RiR_POC.xcdatamodeld in Sources */,
 				30F5D23822B8039A00090C11 /* ViewController.swift in Sources */,
 				30F5D23622B8039A00090C11 /* AppDelegate.swift in Sources */,
@@ -615,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GTEQ3W8222;
+				DEVELOPMENT_TEAM = D562KTB7QA;
 				INFOPLIST_FILE = RiR_POC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,7 +638,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GTEQ3W8222;
+				DEVELOPMENT_TEAM = D562KTB7QA;
 				INFOPLIST_FILE = RiR_POC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
