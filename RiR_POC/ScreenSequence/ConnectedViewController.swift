@@ -114,7 +114,8 @@ class ConnectedViewController: UIViewController {
             lblQuestion1.text = self.watsonMocks[self.indexMock].questionText
             lblQuestion1.isHidden = false
             // Selected
-                lblAnswer1.text = self.watsonMocks[self.indexMock].responseText
+            lblAnswer1.text = self.watsonMocks[self.indexMock].responseText
+            lblAnswer1.sizeToFit()
                 self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
                     if let data = data {
                         SoundManager.shared.playSound(withData: data)
@@ -129,7 +130,7 @@ class ConnectedViewController: UIViewController {
                         self.lblQuestion1.isHidden = true
                         self.lblAnswer1.isHidden = true
                         self.btnQuestion1.isHidden = true
-                        self.btnNext1.isHidden = false
+//                        self.btnNext1.isHidden = false
                         
                     }
                 })
@@ -140,7 +141,7 @@ class ConnectedViewController: UIViewController {
             lblQuestion1.isHidden = true
             lblAnswer1.isHidden = true
             btnQuestion1.isHidden = true
-            btnNext1.isHidden = true
+//            btnNext1.isHidden = true
             
             self.indexMock = self.indexMock + 1
         }
@@ -163,6 +164,7 @@ class ConnectedViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.lblAnswer1.isHidden = true
             self.btnQuestion1.isHidden = true
+            self.btnQuestion1.alpha = 0
         }
 
     }
