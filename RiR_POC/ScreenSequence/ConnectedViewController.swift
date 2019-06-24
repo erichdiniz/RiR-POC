@@ -8,9 +8,18 @@
 
 import UIKit
 
+enum ResponseType {
+    case normal
+    case schedule
+    case images
+}
+
 class ConnectedViewController: UIViewController {
 
     var imageNames = ["drake","cardib", "rexha", "alok"]
+    
+    var watsonMocks: [WatsonMock] = WatsonMock.createMocks()
+    var indexMock: Int = 0
     
     @IBOutlet weak var btnTwoSeven: UIButton!
     @IBOutlet weak var btnTwoEight: UIButton!
@@ -20,7 +29,6 @@ class ConnectedViewController: UIViewController {
     @IBOutlet weak var btnFiveTen: UIButton!
     @IBOutlet weak var btnSixTen: UIButton!
     
-    @IBOutlet weak var btnMic: UIButton!
     @IBOutlet weak var imgFreq: UIImageView!
     @IBOutlet weak var lblQuestion1: UILabel!
     @IBOutlet weak var lblAnswer1: UILabel!
@@ -33,6 +41,7 @@ class ConnectedViewController: UIViewController {
     @IBOutlet weak var btnFourTenStage: UIButton!
     @IBOutlet weak var btnSixTenStage: UIButton!
     
+    @IBOutlet weak var btnMic: UIButton!
     private let watsonIntegration = WatsonIntegration()
     
     let btnColorDeselected = UIColor(rgb: 0x3C134C)
@@ -48,9 +57,7 @@ class ConnectedViewController: UIViewController {
         btnTwoSevenStage?.layer.cornerRadius = 24
         btnTwoSevenStage?.clipsToBounds = true
         btnFourTenStage?.layer.cornerRadius = 24
-        btnFourTenStage?.clipsToBounds = true
-        btnSixTenStage?.layer.cornerRadius = 24
-        btnSixTenStage?.clipsToBounds = true
+        btnFourTenStage?.clipsToBounds = true        
         
         btnNext?.layer.cornerRadius = 24
         btnNext?.clipsToBounds = true
@@ -77,21 +84,19 @@ class ConnectedViewController: UIViewController {
         btnQuestion1?.layer.cornerRadius = 24
         btnQuestion1?.clipsToBounds = true
         
+        
+        
     }
     
     @IBAction func btnPressed(_ sender: Any) {
-        if let button : UIButton = sender as? UIButton
-        {
+        if let button : UIButton = sender as? UIButton {
             button.isSelected = !button.isSelected
             
-            if (button.isSelected)
-            {
+            if (button.isSelected) {
                 button.backgroundColor = btnColorDeselected
                 button.setTitleColor(UIColor.white, for: .normal) //To change button Title colour .. check your button Tint color is clear_color..
 
-            }
-            else
-            {
+            } else {
                 button.backgroundColor = btnColorSelected
                 button.setTitleColor(UIColor.white, for: .normal) //To change button Title colour .. check your button Tint color is clear_color..
 
@@ -99,61 +104,51 @@ class ConnectedViewController: UIViewController {
         }
     }
     
-    @IBAction func btnMicPressed(_ sender: Any) {
-        if let button : UIButton = sender as? UIButton
-        {
-            button.isSelected = !button.isSelected
-            
-            if (button.isSelected)
-            {
-               
-                button.setImage(UIImage(named: "microphone_selected"), for: .focused)
-                button.setImage(UIImage(named: "microphone_selected"), for: .selected)
-                imgFreq.image = UIImage(named: "voice_recording")
-                lblQuestion1.isHidden = false
-                // Selected
-                
-                    self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
-                        if let data = data {
-                            SoundManager.shared.playSound(withData: data)
-                        }
-                        self.lblAnswer1.isHidden = false
-                        self.btnQuestion1.isHidden = false
+    @IBAction func btnMicPressed(_ button: UIButton) {
+        button.isSelected = !button.isSelected
+        
+        if (button.isSelected) {
+            button.setImage(UIImage(named: "microphone_selected"), for: .focused)
+            button.setImage(UIImage(named: "microphone_selected"), for: .selected)
+            imgFreq.image = UIImage(named: "voice_recording")
+            lblQuestion1.text = self.watsonMocks[self.indexMock].questionText
+            lblQuestion1.isHidden = false
+            // Selected
+                lblAnswer1.text = self.watsonMocks[self.indexMock].responseText
+                self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
+                    if let data = data {
+                        SoundManager.shared.playSound(withData: data)
+                    }
+                    self.lblAnswer1.isHidden = false
+                    self.btnQuestion1.isHidden = false
+                    
+                    //
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                        button.setImage(UIImage(named: "microphone"), for: .selected)
+                        self.imgFreq.image = UIImage(named: "voice_stop")
+                        self.lblQuestion1.isHidden = true
+                        self.lblAnswer1.isHidden = true
+                        self.btnQuestion1.isHidden = true
+                        self.btnNext1.isHidden = false
                         
-                        //
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                            button.setImage(UIImage(named: "microphone"), for: .selected)
-                            self.imgFreq.image = UIImage(named: "voice_stop")
-                            self.lblQuestion1.isHidden = true
-                            self.lblAnswer1.isHidden = true
-                            self.btnQuestion1.isHidden = true
-                            self.btnNext1.isHidden = false
-                            
-                        }
-                    })
-                
-                
-            }
-            else
-            {
-                 button.setImage(UIImage(named: "microphone"), for: .highlighted)
-                button.setImage(UIImage(named: "microphone"), for: [])
-                imgFreq.image = UIImage(named: "voice_stop")
-                lblQuestion1.isHidden = true
-                lblAnswer1.isHidden = true
-                btnQuestion1.isHidden = true
-                btnNext1.isHidden = true
-
-                
-            }
+                    }
+                })
+        } else {
+             button.setImage(UIImage(named: "microphone"), for: .highlighted)
+            button.setImage(UIImage(named: "microphone"), for: [])
+            imgFreq.image = UIImage(named: "voice_stop")
+            lblQuestion1.isHidden = true
+            lblAnswer1.isHidden = true
+            btnQuestion1.isHidden = true
+            btnNext1.isHidden = true
+            
+            self.indexMock = self.indexMock + 1
         }
     }
     
     
     
     @IBAction func dismissAll(_ sender: Any) {
-//        self.view.window?.rootViewController?.presentedViewController!.dismiss(animated: true, completion: nil)
-//        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         dismiss(animated: true, completion: nil)
     }
  

@@ -21,6 +21,7 @@
 		30F5D25922B8039D00090C11 /* RiR_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D25822B8039D00090C11 /* RiR_POCUITests.swift */; };
 		30F5D26822B8149D00090C11 /* ConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D26722B8149D00090C11 /* ConnectedViewController.swift */; };
 		30F5D26A22B815BB00090C11 /* NotConnectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D26922B815BB00090C11 /* NotConnectedViewController.swift */; };
+		76674D1E22C1053C00295391 /* WatsonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76674D1D22C1053C00295391 /* WatsonMock.swift */; };
 		76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD941322BD6ACF00597BF0 /* WatsonIntegration.swift */; };
 		76CD941822BD6C6F00597BF0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD941722BD6C6F00597BF0 /* SoundManager.swift */; };
 		C56918CAA38C7126AF17C21D /* Pods_RiR_POCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C2490CB32C0E1AC04DEF07 /* Pods_RiR_POCTests.framework */; };
@@ -66,6 +67,7 @@
 		30F5D25A22B8039D00090C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30F5D26722B8149D00090C11 /* ConnectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedViewController.swift; sourceTree = "<group>"; };
 		30F5D26922B815BB00090C11 /* NotConnectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotConnectedViewController.swift; sourceTree = "<group>"; };
+		76674D1D22C1053C00295391 /* WatsonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonMock.swift; sourceTree = "<group>"; };
 		76CD941322BD6ACF00597BF0 /* WatsonIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonIntegration.swift; sourceTree = "<group>"; };
 		76CD941722BD6C6F00597BF0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		A02D781FC01DB48838FEA462 /* Pods-RiR_POCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiR_POCTests.release.xcconfig"; path = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				30F5D23722B8039A00090C11 /* ViewController.swift */,
 				30F5D23922B8039A00090C11 /* Main.storyboard */,
 				30F5D24122B8039D00090C11 /* LaunchScreen.storyboard */,
+				76674D1D22C1053C00295391 /* WatsonMock.swift */,
 				30F5D24422B8039D00090C11 /* Info.plist */,
 				30F5D23C22B8039B00090C11 /* RiR_POC.xcdatamodeld */,
 				76CD941622BD6C5800597BF0 /* Watson */,
@@ -435,6 +438,7 @@
 			files = (
 				30F5D26A22B815BB00090C11 /* NotConnectedViewController.swift in Sources */,
 				306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */,
+				76674D1E22C1053C00295391 /* WatsonMock.swift in Sources */,
 				76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */,
 				30F5D26822B8149D00090C11 /* ConnectedViewController.swift in Sources */,
 				30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */,
