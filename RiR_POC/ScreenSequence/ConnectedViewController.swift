@@ -98,18 +98,18 @@ class ConnectedViewController: UIViewController {
             button.isSelected = !button.isSelected
             
             if (button.isSelected) {
-                button.backgroundColor = btnColorSelected
-                button.setTitleColor(UIColor.white, for: .normal)
-                button.layer.borderColor = btnColorSelected.cgColor
-                button.tintColor = btnColorSelected
 
-                
+                button.backgroundColor = btnColorDeselected
+                button.setTitleColor(UIColor.white, for: .normal)
+                button.tintColor = btnColorDeselected
                 //To change button Title colour .. check your button Tint color is clear_color..
 
             } else {
 
-                button.backgroundColor = btnColorDeselected
+                button.backgroundColor = btnColorSelected
                 button.setTitleColor(UIColor.white, for: .normal)
+                button.layer.borderColor = btnColorSelected.cgColor
+                button.tintColor = btnColorSelected
 //                button.layer.border//To change button Title colour .. check your button Tint color is clear_color..
 
             }
@@ -125,6 +125,8 @@ class ConnectedViewController: UIViewController {
             
             button.setImage(UIImage(named: "microphone_selected"), for: .focused)
             button.setImage(UIImage(named: "microphone_selected"), for: .selected)
+            let voiceRecordingGif = UIImage.gifImageWithName("freq_recording_v1")
+
             imgFreq.image = UIImage(named: "voice_recording")
             lblQuestion1.text = watsonMock.questionText
             lblQuestion1.isHidden = false

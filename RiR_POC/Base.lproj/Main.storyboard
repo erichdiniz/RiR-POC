@@ -21,8 +21,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-MV-Erf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-ng-lmd">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-ng-lmd">
                                 <rect key="frame" x="45" y="416" width="285" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="socialConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gf-l1-g0U"/>
                                 </connections>
@@ -54,8 +55,9 @@
                                     <segue destination="8pt-4x-edv" kind="show" id="2lu-vW-hIE"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oksocial" translatesAutoresizingMaskIntoConstraints="NO" id="Jxb-jB-j6x">
-                                <rect key="frame" x="329" y="395" width="24" height="23"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oksocial" translatesAutoresizingMaskIntoConstraints="NO" id="Jxb-jB-j6x">
+                                <rect key="frame" x="329" y="395" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -66,12 +68,8 @@
                             <constraint firstItem="023-C2-Sbt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PhQ-sx-QKC"/>
                             <constraint firstItem="mSQ-MV-Erf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uq0-SL-yWv"/>
                             <constraint firstAttribute="bottom" secondItem="mSQ-MV-Erf" secondAttribute="bottom" id="XUF-1D-khN"/>
-                            <constraint firstItem="Jxb-jB-j6x" firstAttribute="leading" secondItem="mSQ-MV-Erf" secondAttribute="trailing" constant="-46" id="iB1-IB-eBz"/>
-                            <constraint firstItem="Jxb-jB-j6x" firstAttribute="top" secondItem="mSQ-MV-Erf" secondAttribute="bottom" constant="-417" id="jbV-Ji-I9k"/>
                             <constraint firstItem="mSQ-MV-Erf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lhC-a4-yRE"/>
-                            <constraint firstItem="mDs-sg-1X9" firstAttribute="top" secondItem="WD6-ng-lmd" secondAttribute="bottom" constant="254" id="qTu-ds-iC5"/>
                             <constraint firstItem="023-C2-Sbt" firstAttribute="top" secondItem="mDs-sg-1X9" secondAttribute="bottom" constant="-1" id="rak-0v-s0S"/>
-                            <constraint firstItem="WD6-ng-lmd" firstAttribute="leading" secondItem="mSQ-MV-Erf" secondAttribute="trailing" constant="-330" id="wou-RE-Z9L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -350,7 +348,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="QdW-NS-eCC">
-                                <rect key="frame" x="15" y="48" width="30" height="19.000000000000057"/>
+                                <rect key="frame" x="15" y="48" width="30" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18.999999999999943" id="4Yn-KU-sbB"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="W9t-cc-DhS"/>
@@ -565,9 +563,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-JI-pb4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1811"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gor-xF-BRB">
                                 <rect key="frame" x="157.66666666666666" y="718" width="60" height="60"/>
                                 <constraints>
@@ -581,6 +576,9 @@
                                     <segue destination="Env-2L-VJd" kind="presentation" id="TPk-2R-j5d"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-JI-pb4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1811"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.058823529409999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -658,7 +656,7 @@
                                     <action selector="dismissAll:" destination="Env-2L-VJd" eventType="touchUpInside" id="dpV-wN-ey6"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitesnake" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-Xu-bpq">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitesnake" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-Xu-bpq">
                                 <rect key="frame" x="-35" y="251" width="445" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="130-if-6iD"/>
@@ -715,7 +713,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-9f-LfH">
-                                <rect key="frame" x="336" y="54" width="19" height="22"/>
+                                <rect key="frame" x="339" y="54" width="16" height="22"/>
                                 <state key="normal" image="closeBTN"/>
                                 <connections>
                                     <action selector="didTouchCancelButton:" destination="il1-SA-IJG" eventType="touchUpInside" id="jT3-vW-cAN"/>
@@ -759,7 +757,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdb-Me-syj">
-                                <rect key="frame" x="156" y="706" width="63" height="64"/>
+                                <rect key="frame" x="156" y="748" width="63" height="22"/>
                                 <state key="normal" image="microphone"/>
                                 <state key="selected" image="microphone_selected"/>
                                 <connections>
@@ -843,10 +841,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-Jl-YxQ">
-                                <rect key="frame" x="15" y="51" width="29" height="105.00000000000006"/>
+                                <rect key="frame" x="15" y="51" width="29" height="105"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-tJ-gvc">
-                                <rect key="frame" x="156" y="706" width="63" height="64"/>
+                                <rect key="frame" x="156" y="748" width="63" height="22"/>
                                 <state key="normal" image="microphone"/>
                                 <state key="selected" image="microphone_selected"/>
                                 <connections>
@@ -866,7 +864,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAl-wz-nfd">
-                                <rect key="frame" x="129" y="620" width="117" height="44"/>
+                                <rect key="frame" x="129" y="662" width="117" height="44"/>
                                 <color key="backgroundColor" red="0.90095025299999998" green="0.26690268519999999" blue="0.51315712930000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="gPI-cH-y0G"/>
@@ -876,49 +874,49 @@
                                 </state>
                             </button>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitesnake" translatesAutoresizingMaskIntoConstraints="NO" id="8rR-IO-9hK">
-                                <rect key="frame" x="-75" y="295" width="525" height="280"/>
+                                <rect key="frame" x="-75" y="337" width="525" height="280"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="EkQ-hl-RAZ"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval_selected" translatesAutoresizingMaskIntoConstraints="NO" id="wSo-ES-i0L">
-                                <rect key="frame" x="154" y="578" width="7" height="28"/>
+                                <rect key="frame" x="154" y="620" width="7" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="AlZ-7K-Ntg"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="mgx-kZ-vqe">
-                                <rect key="frame" x="169" y="578" width="7" height="28"/>
+                                <rect key="frame" x="169" y="620" width="7" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="3xc-ia-fEf"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-k1-JCh">
-                                <rect key="frame" x="184" y="578" width="7" height="28"/>
+                                <rect key="frame" x="184" y="620" width="7" height="28"/>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="iet-MU-WIW">
-                                <rect key="frame" x="199" y="578" width="7" height="28"/>
+                                <rect key="frame" x="199" y="620" width="7" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="7" id="RxI-en-GvF"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="Bd1-Mf-h77">
-                                <rect key="frame" x="214" y="578" width="7" height="28"/>
+                                <rect key="frame" x="214" y="620" width="7" height="28"/>
                             </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whitesnake                      19:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-H7-vnm">
-                                <rect key="frame" x="72" y="503" width="231" height="21"/>
+                                <rect key="frame" x="72" y="545" width="231" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28/09" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHB-O8-SV6">
-                                <rect key="frame" x="300" y="532" width="0.0" height="16"/>
+                                <rect key="frame" x="258.66666666666669" y="574" width="41.333333333333314" height="16"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="titans" translatesAutoresizingMaskIntoConstraints="NO" id="3Oz-06-zRg">
-                                <rect key="frame" x="193" y="334" width="341" height="202"/>
+                                <rect key="frame" x="193" y="376" width="341" height="202"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="341" id="MTg-HH-Orq"/>
                                     <constraint firstAttribute="height" constant="202" id="bNh-hk-sHW"/>
