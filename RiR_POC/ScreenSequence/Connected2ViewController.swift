@@ -18,7 +18,6 @@ class Connected2ViewController: UIViewController {
     @IBOutlet weak var lblQuestion2: UILabel!
     @IBOutlet weak var lblAnswer2: UILabel!
     @IBOutlet weak var btnNext2: UIButton!
-    @IBOutlet weak var btnNext3: UIButton!
     
     private let watsonIntegration = WatsonIntegration()
     
@@ -33,8 +32,7 @@ class Connected2ViewController: UIViewController {
         btnNext?.clipsToBounds = true
         btnNext2?.layer.cornerRadius = 24
         btnNext2?.clipsToBounds = true
-        btnNext3?.layer.cornerRadius = 24
-        btnNext3?.clipsToBounds = true
+
         
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -68,7 +66,6 @@ class Connected2ViewController: UIViewController {
                     }
                     self.lblAnswer2?.isHidden = false
                     self.btnNext2?.isHidden = false
-                    self.btnNext3?.isHidden = false
                 })
             
             }
