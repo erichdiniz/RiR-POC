@@ -12,6 +12,7 @@ enum ResponseType {
     case normal
     case schedule
     case images
+    case maps
 }
 
 class ConnectedViewController: UIViewController {
@@ -48,6 +49,7 @@ class ConnectedViewController: UIViewController {
     let btnColorSelected = UIColor(rgb: 0xE64484)
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var mockImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +87,7 @@ class ConnectedViewController: UIViewController {
         btnQuestion1?.clipsToBounds = true
         
         
+        mockImageView?.isHidden = true
         
     }
     
@@ -93,29 +96,41 @@ class ConnectedViewController: UIViewController {
             button.isSelected = !button.isSelected
             
             if (button.isSelected) {
-                button.backgroundColor = btnColorDeselected
-                button.setTitleColor(UIColor.white, for: .normal) //To change button Title colour .. check your button Tint color is clear_color..
+                button.backgroundColor = btnColorSelected
+                button.setTitleColor(UIColor.white, for: .normal)
+                button.layer.borderColor = btnColorSelected as! CGColor
+
+                
+                //To change button Title colour .. check your button Tint color is clear_color..
 
             } else {
-                button.backgroundColor = btnColorSelected
-                button.setTitleColor(UIColor.white, for: .normal) //To change button Title colour .. check your button Tint color is clear_color..
+
+                button.backgroundColor = btnColorDeselected
+                button.setTitleColor(UIColor.white, for: .normal)
+//                button.layer.border//To change button Title colour .. check your button Tint color is clear_color..
 
             }
         }
     }
     
     @IBAction func btnMicPressed(_ button: UIButton) {
+        SoundManager.shared.stopSound()
         button.isSelected = !button.isSelected
         
         if (button.isSelected) {
+            let watsonMock = self.watsonMocks[self.indexMock]
+            
             button.setImage(UIImage(named: "microphone_selected"), for: .focused)
             button.setImage(UIImage(named: "microphone_selected"), for: .selected)
             imgFreq.image = UIImage(named: "voice_recording")
-            lblQuestion1.text = self.watsonMocks[self.indexMock].questionText
+            lblQuestion1.text = watsonMock.questionText
             lblQuestion1.isHidden = false
             // Selected
-            lblAnswer1.text = self.watsonMocks[self.indexMock].responseText
+            lblAnswer1.text = watsonMock.responseText
             lblAnswer1.sizeToFit()
+            
+            
+            if watsonMock.responseType == .normal || watsonMock.responseType == .schedule {
                 self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
                     if let data = data {
                         SoundManager.shared.playSound(withData: data)
@@ -134,6 +149,19 @@ class ConnectedViewController: UIViewController {
                         
                     }
                 })
+            }else if watsonMock.responseType == .images {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    self.btnQuestion1.isHidden = true
+                    self.imgFreq.isHidden = true
+                    self.mockImageView.isHidden = false
+                    self.lblAnswer1.isHidden = true
+                    }
+            } else if watsonMock.responseType == .maps {
+                //
+                
+                self.performSegue(withIdentifier: "presentMaps", sender: nil)
+            }
+            
         } else {
              button.setImage(UIImage(named: "microphone"), for: .highlighted)
             button.setImage(UIImage(named: "microphone"), for: [])
@@ -171,23 +199,7 @@ class ConnectedViewController: UIViewController {
     
 }
 
-extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(rgb: Int) {
-        self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
-        )
-    }
-}
+
 
 extension ConnectedViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -208,4 +220,22 @@ extension ConnectedViewController: UITableViewDataSource {
         cell.selectionStyle = .none
         return cell
     }
+}
+    
+    extension UIColor {
+        convenience init(red: Int, green: Int, blue: Int) {
+            assert(red >= 0 && red <= 255, "Invalid red component")
+            assert(green >= 0 && green <= 255, "Invalid green component")
+            assert(blue >= 0 && blue <= 255, "Invalid blue component")
+            
+            self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+        }
+        
+        convenience init(rgb: Int) {
+            self.init(
+                red: (rgb >> 16) & 0xFF,
+                green: (rgb >> 8) & 0xFF,
+                blue: rgb & 0xFF
+            )
+        }
 }

@@ -12,6 +12,7 @@
 		3024AC4A22BA9350005B9B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024AC4922BA9350005B9B36 /* Assets.xcassets */; };
 		306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */; };
 		30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9303122BFBE1500C21F41 /* Connected3ViewController.swift */; };
+		30E1CE1D22C1436200FDB415 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1CE1C22C1436200FDB415 /* MapsViewController.swift */; };
 		30F5D23622B8039A00090C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D23522B8039A00090C11 /* AppDelegate.swift */; };
 		30F5D23822B8039A00090C11 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5D23722B8039A00090C11 /* ViewController.swift */; };
 		30F5D23B22B8039A00090C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F5D23922B8039A00090C11 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		3024AC4922BA9350005B9B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingersTableViewCell.swift; sourceTree = "<group>"; };
 		30A9303122BFBE1500C21F41 /* Connected3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connected3ViewController.swift; sourceTree = "<group>"; };
+		30E1CE1C22C1436200FDB415 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		30F5D23222B8039A00090C11 /* RiR_POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiR_POC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F5D23522B8039A00090C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F5D23722B8039A00090C11 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				30F5D24422B8039D00090C11 /* Info.plist */,
 				30F5D23C22B8039B00090C11 /* RiR_POC.xcdatamodeld */,
 				76CD941622BD6C5800597BF0 /* Watson */,
+				30E1CE1C22C1436200FDB415 /* MapsViewController.swift */,
 			);
 			path = RiR_POC;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				30F5D26A22B815BB00090C11 /* NotConnectedViewController.swift in Sources */,
 				306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */,
 				76674D1E22C1053C00295391 /* WatsonMock.swift in Sources */,
+				30E1CE1D22C1436200FDB415 /* MapsViewController.swift in Sources */,
 				76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */,
 				30F5D26822B8149D00090C11 /* ConnectedViewController.swift in Sources */,
 				30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */,

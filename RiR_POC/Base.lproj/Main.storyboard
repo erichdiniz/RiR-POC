@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deV-dv-leK">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -615,6 +615,18 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7v-qO-jjE">
+                                <rect key="frame" x="113.99999999999999" y="625" width="146.66666666666663" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="6xJ-Be-bGw"/>
+                                </constraints>
+                                <state key="normal" image="agendar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="Env-2L-VJd" eventType="touchUpInside" id="2e0-ht-jfQ"/>
+                                </connections>
+                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fica ligado que faltam apenas 45 minutos pra começar a atração, gostaria de ser avisado quando começar?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0L-r8-MuN">
                                 <rect key="frame" x="26" y="391.66666666666669" width="323" height="57.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
@@ -632,18 +644,12 @@
                                     <action selector="dismissAll:" destination="Env-2L-VJd" eventType="touchUpInside" id="dpV-wN-ey6"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7v-qO-jjE">
-                                <rect key="frame" x="113.99999999999999" y="625" width="146.66666666666663" height="48"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whitesnake" translatesAutoresizingMaskIntoConstraints="NO" id="Deh-Xu-bpq">
+                                <rect key="frame" x="-35" y="251" width="445" height="310"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="6xJ-Be-bGw"/>
+                                    <constraint firstAttribute="height" constant="310" id="130-if-6iD"/>
                                 </constraints>
-                                <state key="normal" image="agendar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showAlert:" destination="Env-2L-VJd" eventType="touchUpInside" id="2e0-ht-jfQ"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.18039215689999999" green="0.058823529409999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -658,10 +664,13 @@
                             <constraint firstItem="YZR-iG-Fmp" firstAttribute="centerX" secondItem="q8f-qJ-3Pn" secondAttribute="centerX" id="QcK-Ba-M3y"/>
                             <constraint firstItem="O0L-r8-MuN" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-10" id="Scw-69-SAt"/>
                             <constraint firstItem="O0L-r8-MuN" firstAttribute="centerX" secondItem="q8f-qJ-3Pn" secondAttribute="centerX" id="Xi5-On-TkY"/>
+                            <constraint firstItem="Deh-Xu-bpq" firstAttribute="leading" secondItem="6q4-Gt-p2N" secondAttribute="leading" constant="-35" id="aal-xS-uQk"/>
                             <constraint firstItem="Ekc-cp-mHg" firstAttribute="centerX" secondItem="R7v-qO-jjE" secondAttribute="centerX" constant="0.16666666666665719" id="fHm-Ur-fgN"/>
+                            <constraint firstItem="Deh-Xu-bpq" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-150.66666666666669" id="fZp-mf-k2Y"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="bottom" secondItem="Ekc-cp-mHg" secondAttribute="bottom" constant="3" id="fm5-Db-WPJ"/>
                             <constraint firstItem="q8f-qJ-3Pn" firstAttribute="top" secondItem="YZR-iG-Fmp" secondAttribute="bottom" constant="35" id="mbG-vw-Myn"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" secondItem="ekk-mI-uNk" secondAttribute="trailing" constant="20" id="nhs-2v-Pdc"/>
+                            <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" secondItem="Deh-Xu-bpq" secondAttribute="trailing" constant="-35" id="vEa-Z0-gVz"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" secondItem="O0L-r8-MuN" secondAttribute="trailing" constant="26" id="z8x-FR-Wof"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6q4-Gt-p2N"/>
@@ -672,11 +681,45 @@
                         <outlet property="imgFreq" destination="q8f-qJ-3Pn" id="47A-kI-lsh"/>
                         <outlet property="lblAnswer1" destination="O0L-r8-MuN" id="V7b-YY-EvM"/>
                         <outlet property="lblQuestion1" destination="YZR-iG-Fmp" id="vSp-R7-JrA"/>
+                        <outlet property="mockImageView" destination="Deh-Xu-bpq" id="hnX-Tj-prd"/>
+                        <segue destination="il1-SA-IJG" kind="presentation" identifier="presentMaps" id="gwe-23-h3C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tVc-UJ-Vsm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5616.8000000000002" y="-817.24137931034488"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="DKt-Pa-H0a">
+            <objects>
+                <viewController id="il1-SA-IJG" customClass="MapsViewController" customModule="RiR_POC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zyN-PR-Oa2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="xS3-pb-8Bc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-9f-LfH">
+                                <rect key="frame" x="336" y="54" width="19" height="22"/>
+                                <state key="normal" image="closeBTN"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ibF-9f-LfH" firstAttribute="top" secondItem="d5g-Er-Mkr" secondAttribute="top" constant="10" id="19G-ph-VNq"/>
+                            <constraint firstItem="d5g-Er-Mkr" firstAttribute="trailing" secondItem="xS3-pb-8Bc" secondAttribute="trailing" id="Ic6-aW-LG3"/>
+                            <constraint firstItem="xS3-pb-8Bc" firstAttribute="top" secondItem="zyN-PR-Oa2" secondAttribute="top" id="JCZ-7Z-oGF"/>
+                            <constraint firstAttribute="bottom" secondItem="xS3-pb-8Bc" secondAttribute="bottom" id="Tpr-aE-kDR"/>
+                            <constraint firstItem="d5g-Er-Mkr" firstAttribute="trailing" secondItem="ibF-9f-LfH" secondAttribute="trailing" constant="20" id="Z3a-Yi-6qU"/>
+                            <constraint firstItem="xS3-pb-8Bc" firstAttribute="leading" secondItem="d5g-Er-Mkr" secondAttribute="leading" id="iak-Q5-mug"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d5g-Er-Mkr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKq-Ip-xqk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6428" y="-824.6305418719212"/>
         </scene>
         <!--Connected2 View Controller-->
         <scene sceneID="gwo-wg-nuQ">
@@ -1023,6 +1066,7 @@
         <image name="badge1" width="671" height="674"/>
         <image name="closeBTN" width="19" height="19"/>
         <image name="main" width="375" height="1811"/>
+        <image name="map" width="375" height="812"/>
         <image name="microphone" width="64" height="64"/>
         <image name="microphone_selected" width="64" height="64"/>
         <image name="signup" width="375" height="667"/>
