@@ -22,6 +22,8 @@ class ConnectedViewController: UIViewController {
     var watsonMocks: [WatsonMock] = WatsonMock.createMocks()
     var indexMock: Int = 0
     
+    @IBOutlet weak var ok_social: UIImageView!
+    
     @IBOutlet weak var btnTwoSeven: UIButton!
     @IBOutlet weak var btnTwoEight: UIButton!
     @IBOutlet weak var btnTwoNine: UIButton!
@@ -34,7 +36,6 @@ class ConnectedViewController: UIViewController {
     @IBOutlet weak var lblQuestion1: UILabel!
     @IBOutlet weak var lblAnswer1: UILabel!
     @IBOutlet weak var btnQuestion1: UIButton!
-    @IBOutlet weak var btnNext1: UIButton!
     
     @IBOutlet weak var btnNext: UIButton!
 
@@ -59,12 +60,13 @@ class ConnectedViewController: UIViewController {
         btnTwoSevenStage?.layer.cornerRadius = 24
         btnTwoSevenStage?.clipsToBounds = true
         btnFourTenStage?.layer.cornerRadius = 24
-        btnFourTenStage?.clipsToBounds = true        
+        btnFourTenStage?.clipsToBounds = true
+        btnSixTenStage?.layer.cornerRadius = 24
+        btnSixTenStage?.clipsToBounds = true
         
         btnNext?.layer.cornerRadius = 24
         btnNext?.clipsToBounds = true
-        btnNext1?.layer.cornerRadius = 24
-        btnNext1?.clipsToBounds = true
+
         
         btnTwoSeven?.layer.cornerRadius = 24
         btnTwoSeven?.clipsToBounds = true
@@ -98,7 +100,8 @@ class ConnectedViewController: UIViewController {
             if (button.isSelected) {
                 button.backgroundColor = btnColorSelected
                 button.setTitleColor(UIColor.white, for: .normal)
-                button.layer.borderColor = btnColorSelected as! CGColor
+                button.layer.borderColor = btnColorSelected.cgColor
+                button.tintColor = btnColorSelected
 
                 
                 //To change button Title colour .. check your button Tint color is clear_color..
@@ -197,6 +200,17 @@ class ConnectedViewController: UIViewController {
 
     }
     
+    @IBAction func socialConnect(_ button: UIButton){
+        button.isSelected = !button.isSelected
+        
+        if (button.isSelected) {
+            ok_social.isHidden = false
+            
+        } else {
+            
+            ok_social.isHidden = true
+        }
+    }
 }
 
 

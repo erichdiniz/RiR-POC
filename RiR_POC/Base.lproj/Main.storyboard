@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deV-dv-leK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Connected View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RiR_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ConnectedViewController" customModule="RiR_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,6 +21,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signup" translatesAutoresizingMaskIntoConstraints="NO" id="mSQ-MV-Erf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-ng-lmd">
+                                <rect key="frame" x="45" y="416" width="285" height="42"/>
+                                <connections>
+                                    <action selector="socialConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gf-l1-g0U"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="023-C2-Sbt">
                                 <rect key="frame" x="139.66666666666666" y="754" width="96" height="24"/>
                                 <constraints>
@@ -48,6 +54,9 @@
                                     <segue destination="8pt-4x-edv" kind="show" id="2lu-vW-hIE"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="oksocial" translatesAutoresizingMaskIntoConstraints="NO" id="Jxb-jB-j6x">
+                                <rect key="frame" x="329" y="395" width="24" height="23"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -57,13 +66,18 @@
                             <constraint firstItem="023-C2-Sbt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PhQ-sx-QKC"/>
                             <constraint firstItem="mSQ-MV-Erf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Uq0-SL-yWv"/>
                             <constraint firstAttribute="bottom" secondItem="mSQ-MV-Erf" secondAttribute="bottom" id="XUF-1D-khN"/>
+                            <constraint firstItem="Jxb-jB-j6x" firstAttribute="leading" secondItem="mSQ-MV-Erf" secondAttribute="trailing" constant="-46" id="iB1-IB-eBz"/>
+                            <constraint firstItem="Jxb-jB-j6x" firstAttribute="top" secondItem="mSQ-MV-Erf" secondAttribute="bottom" constant="-417" id="jbV-Ji-I9k"/>
                             <constraint firstItem="mSQ-MV-Erf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lhC-a4-yRE"/>
+                            <constraint firstItem="mDs-sg-1X9" firstAttribute="top" secondItem="WD6-ng-lmd" secondAttribute="bottom" constant="254" id="qTu-ds-iC5"/>
                             <constraint firstItem="023-C2-Sbt" firstAttribute="top" secondItem="mDs-sg-1X9" secondAttribute="bottom" constant="-1" id="rak-0v-s0S"/>
+                            <constraint firstItem="WD6-ng-lmd" firstAttribute="leading" secondItem="mSQ-MV-Erf" secondAttribute="trailing" constant="-330" id="wou-RE-Z9L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="btnNext" destination="mDs-sg-1X9" id="vjG-lk-0Kw"/>
+                        <outlet property="ok_social" destination="Jxb-jB-j6x" id="q2K-Nv-939"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -703,6 +717,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-9f-LfH">
                                 <rect key="frame" x="336" y="54" width="19" height="22"/>
                                 <state key="normal" image="closeBTN"/>
+                                <connections>
+                                    <action selector="didTouchCancelButton:" destination="il1-SA-IJG" eventType="touchUpInside" id="jT3-vW-cAN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1069,6 +1086,7 @@
         <image name="map" width="375" height="812"/>
         <image name="microphone" width="64" height="64"/>
         <image name="microphone_selected" width="64" height="64"/>
+        <image name="oksocial" width="307" height="308"/>
         <image name="signup" width="375" height="667"/>
         <image name="titans" width="37" height="340"/>
         <image name="voice_stop" width="375" height="3"/>
