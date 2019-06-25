@@ -52,6 +52,8 @@ class ConnectedViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var mockImageView: UIImageView!
     
+    var isFinished: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,9 +90,15 @@ class ConnectedViewController: UIViewController {
         btnQuestion1?.layer.cornerRadius = 24
         btnQuestion1?.clipsToBounds = true
         
-        
         mockImageView?.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         
+        if self.isFinished {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func btnPressed(_ sender: Any) {
@@ -125,7 +133,7 @@ class ConnectedViewController: UIViewController {
             
             button.setImage(UIImage(named: "microphone_selected"), for: .focused)
             button.setImage(UIImage(named: "microphone_selected"), for: .selected)
-            let voiceRecordingGif = UIImage.gifImageWithName("freq_recording_v1")
+            //let voiceRecordingGif = UIImage.gifImageWithName("freq_recording_v1")
 
             imgFreq.image = UIImage(named: "voice_recording")
             lblQuestion1.text = watsonMock.questionText
@@ -134,8 +142,9 @@ class ConnectedViewController: UIViewController {
             lblAnswer1.text = watsonMock.responseText
             lblAnswer1.sizeToFit()
             
-            
             if watsonMock.responseType == .normal || watsonMock.responseType == .schedule {
+                
+                self.btnMic.isEnabled = false
                 self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
                     if let data = data {
                         SoundManager.shared.playSound(withData: data)
@@ -143,17 +152,11 @@ class ConnectedViewController: UIViewController {
                     self.lblAnswer1.isHidden = false
                     self.btnQuestion1.isHidden = false
                     
-                    //
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
-                        button.setImage(UIImage(named: "microphone"), for: .selected)
-                        self.imgFreq.image = UIImage(named: "voice_stop")
-                        self.lblQuestion1.isHidden = true
-                        self.lblAnswer1.isHidden = true
-                        self.btnQuestion1.isHidden = true
-//                        self.btnNext1.isHidden = false
-                        
-                    }
+                    button.setImage(UIImage(named: "microphone"), for: .selected)
+                    self.imgFreq.image = UIImage(named: "voice_stop")
+                    self.btnMic.isEnabled = true
                 })
+                
             }else if watsonMock.responseType == .images {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     self.btnQuestion1.isHidden = true
@@ -162,31 +165,34 @@ class ConnectedViewController: UIViewController {
                     self.lblAnswer1.isHidden = true
                     }
             } else if watsonMock.responseType == .maps {
-                //
+                self.lblQuestion1.isHidden = false
+                self.mockImageView.isHidden = true
+                self.lblAnswer1.isHidden = true
                 
-                self.performSegue(withIdentifier: "presentMaps", sender: nil)
+                self.isFinished = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    self.performSegue(withIdentifier: "presentMaps", sender: nil)
+                }
             }
             
         } else {
-             button.setImage(UIImage(named: "microphone"), for: .highlighted)
+            button.setImage(UIImage(named: "microphone"), for: .highlighted)
             button.setImage(UIImage(named: "microphone"), for: [])
             imgFreq.image = UIImage(named: "voice_stop")
             lblQuestion1.isHidden = true
             lblAnswer1.isHidden = true
             btnQuestion1.isHidden = true
+            mockImageView.isHidden = true
 //            btnNext1.isHidden = true
             
             self.indexMock = self.indexMock + 1
         }
     }
     
-    
-    
     @IBAction func dismissAll(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
  
-    
     @IBAction func showAlert(_ sender: Any) {
         let alertController = UIAlertController(title: "Agendado!", message:
             "Sua atração foi agendada com sucesso!", preferredStyle: .alert)
@@ -194,12 +200,14 @@ class ConnectedViewController: UIViewController {
         
         self.present(alertController, animated: true, completion: nil)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+        //DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.lblQuestion1.isHidden = true
             self.lblAnswer1.isHidden = true
             self.btnQuestion1.isHidden = true
             self.btnQuestion1.alpha = 0
-        }
+        //}
 
+        SoundManager.shared.stopSound()
     }
     
     @IBAction func socialConnect(_ button: UIButton){
