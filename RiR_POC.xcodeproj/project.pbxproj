@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		240173B8BF07E6301F86A7A7 /* Pods_RiR_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42B61E749B2C2A78F6BA93E /* Pods_RiR_POC.framework */; };
 		300BBF8B22C262F3001E852E /* Connected2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300BBF8A22C262F3001E852E /* Connected2ViewController.swift */; };
+		300BBF8D22C28E4E001E852E /* freq_recording_v1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 300BBF8C22C28E4E001E852E /* freq_recording_v1.gif */; };
+		300BBF9122C29ACE001E852E /* freq_recording_v2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 300BBF9022C29ACD001E852E /* freq_recording_v2.gif */; };
+		300BBF9322C29E1D001E852E /* siri.gif in Resources */ = {isa = PBXBuildFile; fileRef = 300BBF9222C29E1C001E852E /* siri.gif */; };
 		3024AC4A22BA9350005B9B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024AC4922BA9350005B9B36 /* Assets.xcassets */; };
 		303C3B4D22C16782003B3173 /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303C3B4C22C16782003B3173 /* GIF.swift */; };
 		306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */; };
@@ -53,6 +56,9 @@
 		12C2490CB32C0E1AC04DEF07 /* Pods_RiR_POCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiR_POCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		288635D812872B1F65B45402 /* Pods-RiR_POCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiR_POCUITests.debug.xcconfig"; path = "Target Support Files/Pods-RiR_POCUITests/Pods-RiR_POCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		300BBF8A22C262F3001E852E /* Connected2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connected2ViewController.swift; sourceTree = "<group>"; };
+		300BBF8C22C28E4E001E852E /* freq_recording_v1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = freq_recording_v1.gif; path = Assets.xcassets/freq_recording_v1.dataset/freq_recording_v1.gif; sourceTree = "<group>"; };
+		300BBF9022C29ACD001E852E /* freq_recording_v2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = freq_recording_v2.gif; path = Assets.xcassets/freq_recording_v1.dataset/freq_recording_v2.gif; sourceTree = "<group>"; };
+		300BBF9222C29E1C001E852E /* siri.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = siri.gif; sourceTree = "<group>"; };
 		3024AC4922BA9350005B9B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303C3B4C22C16782003B3173 /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
 		306D1E3822B976E200E24CB4 /* SingersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingersTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				3024AC4922BA9350005B9B36 /* Assets.xcassets */,
+				300BBF8C22C28E4E001E852E /* freq_recording_v1.gif */,
+				300BBF9022C29ACD001E852E /* freq_recording_v2.gif */,
+				300BBF9222C29E1C001E852E /* siri.gif */,
 				30F5D26622B8146900090C11 /* ScreenSequence */,
 				30F5D23522B8039A00090C11 /* AppDelegate.swift */,
 				30F5D23722B8039A00090C11 /* ViewController.swift */,
@@ -329,7 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F5D24322B8039D00090C11 /* LaunchScreen.storyboard in Resources */,
+				300BBF9322C29E1D001E852E /* siri.gif in Resources */,
+				300BBF8D22C28E4E001E852E /* freq_recording_v1.gif in Resources */,
 				3024AC4A22BA9350005B9B36 /* Assets.xcassets in Resources */,
+				300BBF9122C29ACE001E852E /* freq_recording_v2.gif in Resources */,
 				30F5D23B22B8039A00090C11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

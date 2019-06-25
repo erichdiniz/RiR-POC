@@ -24,6 +24,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD6-ng-lmd">
                                 <rect key="frame" x="45" y="416" width="285" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="socialConnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gf-l1-g0U"/>
                                 </connections>
@@ -594,6 +595,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voice_stop" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-qJ-3Pn">
+                                <rect key="frame" x="67" y="293.66666666666663" width="241" height="128"/>
+                                <color key="backgroundColor" red="0.41568627450000001" green="0.41960784309999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0Yy-e8-PZ7"/>
+                                    <constraint firstAttribute="width" constant="241" id="P3h-Nb-UkL"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zRr-wi-eWf">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.058823529409999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekc-cp-mHg">
                                 <rect key="frame" x="155.66666666666666" y="711" width="64" height="64"/>
                                 <state key="normal" image="microphone"/>
@@ -602,13 +616,6 @@
                                     <action selector="btnMicPressed:" destination="Env-2L-VJd" eventType="touchUpInside" id="3G0-0y-jK1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voice_stop" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-qJ-3Pn">
-                                <rect key="frame" x="67" y="273.66666666666669" width="241" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0Yy-e8-PZ7"/>
-                                    <constraint firstAttribute="width" constant="241" id="P3h-Nb-UkL"/>
-                                </constraints>
-                            </imageView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que horas começa o show do Foo Fighters?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZR-iG-Fmp">
                                 <rect key="frame" x="37" y="198" width="301" height="40.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -676,7 +683,7 @@
                                 <rect key="frame" x="213" y="569" width="8" height="28"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.18039215689999999" green="0.058823529409999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.41960784313725491" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" secondItem="cUH-g0-qJ6" secondAttribute="trailing" constant="154" id="3Wo-1Q-tbB"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YZR-iG-Fmp" secondAttribute="trailing" id="49B-Y0-XMe"/>
@@ -691,20 +698,20 @@
                             <constraint firstItem="Ekc-cp-mHg" firstAttribute="top" secondItem="R7v-qO-jjE" secondAttribute="bottom" constant="38" id="HuM-AX-iH2"/>
                             <constraint firstItem="ekk-mI-uNk" firstAttribute="top" secondItem="6q4-Gt-p2N" secondAttribute="top" constant="10" id="J22-Q4-cta"/>
                             <constraint firstItem="hnI-NW-YVS" firstAttribute="top" secondItem="Deh-Xu-bpq" secondAttribute="bottom" constant="8" symbolic="YES" id="LNc-yB-a82"/>
+                            <constraint firstItem="Ekc-cp-mHg" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="289.33333333333337" id="NJP-jF-die"/>
                             <constraint firstItem="hnI-NW-YVS" firstAttribute="top" secondItem="Qwh-vL-AXR" secondAttribute="top" id="Onp-oD-eCl"/>
                             <constraint firstItem="YZR-iG-Fmp" firstAttribute="centerX" secondItem="q8f-qJ-3Pn" secondAttribute="centerX" id="QcK-Ba-M3y"/>
-                            <constraint firstItem="O0L-r8-MuN" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-10" id="Scw-69-SAt"/>
+                            <constraint firstItem="O0L-r8-MuN" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-29.999999999999943" id="Scw-69-SAt"/>
                             <constraint firstItem="dcQ-9S-5Fs" firstAttribute="top" secondItem="cUH-g0-qJ6" secondAttribute="top" id="Uld-C3-bNQ"/>
                             <constraint firstItem="O0L-r8-MuN" firstAttribute="centerX" secondItem="q8f-qJ-3Pn" secondAttribute="centerX" id="Xi5-On-TkY"/>
                             <constraint firstItem="Deh-Xu-bpq" firstAttribute="leading" secondItem="6q4-Gt-p2N" secondAttribute="leading" constant="-35" id="aal-xS-uQk"/>
                             <constraint firstItem="Ekc-cp-mHg" firstAttribute="centerX" secondItem="R7v-qO-jjE" secondAttribute="centerX" constant="0.16666666666665719" id="fHm-Ur-fgN"/>
                             <constraint firstItem="dcQ-9S-5Fs" firstAttribute="bottom" secondItem="cUH-g0-qJ6" secondAttribute="bottom" id="fWj-W1-Rqn"/>
-                            <constraint firstItem="Deh-Xu-bpq" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-150.66666666666669" id="fZp-mf-k2Y"/>
+                            <constraint firstItem="Deh-Xu-bpq" firstAttribute="top" secondItem="q8f-qJ-3Pn" secondAttribute="bottom" constant="-170.66666666666663" id="fZp-mf-k2Y"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="bottom" secondItem="Ekc-cp-mHg" secondAttribute="bottom" constant="3" id="fm5-Db-WPJ"/>
                             <constraint firstItem="eYw-bj-eSZ" firstAttribute="top" secondItem="dcQ-9S-5Fs" secondAttribute="top" id="lEL-8F-DjM"/>
                             <constraint firstItem="eYw-bj-eSZ" firstAttribute="bottom" secondItem="Qwh-vL-AXR" secondAttribute="bottom" id="luu-BY-M50"/>
                             <constraint firstItem="cUH-g0-qJ6" firstAttribute="leading" secondItem="dcQ-9S-5Fs" secondAttribute="trailing" constant="8" symbolic="YES" id="m13-zJ-jiq"/>
-                            <constraint firstItem="q8f-qJ-3Pn" firstAttribute="top" secondItem="YZR-iG-Fmp" secondAttribute="bottom" constant="35" id="mbG-vw-Myn"/>
                             <constraint firstItem="6q4-Gt-p2N" firstAttribute="trailing" secondItem="ekk-mI-uNk" secondAttribute="trailing" constant="20" id="nhs-2v-Pdc"/>
                             <constraint firstItem="hnI-NW-YVS" firstAttribute="bottom" secondItem="Qwh-vL-AXR" secondAttribute="bottom" id="qFo-cG-fqm"/>
                             <constraint firstItem="eYw-bj-eSZ" firstAttribute="centerX" secondItem="Ekc-cp-mHg" secondAttribute="centerX" id="s2w-mv-ZfF"/>
@@ -719,6 +726,7 @@
                     <connections>
                         <outlet property="btnMic" destination="Ekc-cp-mHg" id="nF5-dh-5tz"/>
                         <outlet property="btnQuestion1" destination="R7v-qO-jjE" id="BVk-8Q-AJv"/>
+                        <outlet property="gambiarraView" destination="zRr-wi-eWf" id="LDM-lM-ZM7"/>
                         <outlet property="imgFreq" destination="q8f-qJ-3Pn" id="47A-kI-lsh"/>
                         <outlet property="lblAnswer1" destination="O0L-r8-MuN" id="V7b-YY-EvM"/>
                         <outlet property="lblQuestion1" destination="YZR-iG-Fmp" id="vSp-R7-JrA"/>
@@ -775,7 +783,6 @@
         <!--Connected3 View Controller-->
         <scene sceneID="4UE-jm-IpH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SP3-QJ-fbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ifg-Ab-Lwb" customClass="Connected3ViewController" customModule="RiR_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D9O-Gj-zVr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -954,6 +961,7 @@
                         <outlet property="lblQuestion3" destination="kI5-EG-fIc" id="Ol5-pQ-NxE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP3-QJ-fbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6264.8000000000002" y="7.389162561576355"/>
         </scene>

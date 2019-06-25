@@ -23,6 +23,7 @@ class ConnectedViewController: UIViewController {
     var indexMock: Int = 0
     
     @IBOutlet weak var ok_social: UIImageView!
+    @IBOutlet weak var gambiarraView: UIView!
     
     @IBOutlet weak var btnTwoSeven: UIButton!
     @IBOutlet weak var btnTwoEight: UIButton!
@@ -134,8 +135,15 @@ class ConnectedViewController: UIViewController {
             button.setImage(UIImage(named: "microphone_selected"), for: .focused)
             button.setImage(UIImage(named: "microphone_selected"), for: .selected)
             //let voiceRecordingGif = UIImage.gifImageWithName("freq_recording_v1")
+            gambiarraView.isHidden = false
+            let recordingImage = UIImage.gifImageWithName("freq_recording_v1")
+            imgFreq.alpha = 1
+            
+            
+            imgFreq.frame = CGRect(x: 20.0, y: 50.0, width: self.view.frame.size.width - 40, height: 150.0)
 
-            imgFreq.image = UIImage(named: "voice_recording")
+            imgFreq.image = recordingImage
+            
             lblQuestion1.text = watsonMock.questionText
             lblQuestion1.isHidden = false
             lblAnswer1.text = watsonMock.responseText
@@ -185,9 +193,13 @@ class ConnectedViewController: UIViewController {
                     }
                     
                     
+                    // Returns an animated UIImage
+//                    let freqGif = UIImage.gifImageWithName("freq_recording_v1")
                     
+                    // Use the UIImage in your UIImageView
+//                    let imageView = UIImageView(image: FreqGif)
                     button.setImage(UIImage(named: "microphone"), for: .selected)
-                    self.imgFreq.image = UIImage(named: "voice_stop")
+                    self.imgFreq.image = UIImage.gifImageWithName("freq_recording_v1")
                     self.lblAnswer1.isHidden = true
                     
                 })
@@ -203,6 +215,8 @@ class ConnectedViewController: UIViewController {
             }
             
         } else {
+            
+            gambiarraView.isHidden = false
             button.setImage(UIImage(named: "microphone"), for: .highlighted)
             button.setImage(UIImage(named: "microphone"), for: [])
             imgFreq.image = UIImage(named: "voice_stop")
