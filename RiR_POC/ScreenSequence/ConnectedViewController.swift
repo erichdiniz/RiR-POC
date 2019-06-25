@@ -138,7 +138,6 @@ class ConnectedViewController: UIViewController {
             imgFreq.image = UIImage(named: "voice_recording")
             lblQuestion1.text = watsonMock.questionText
             lblQuestion1.isHidden = false
-            // Selected
             lblAnswer1.text = watsonMock.responseText
             lblAnswer1.sizeToFit()
             
@@ -157,14 +156,42 @@ class ConnectedViewController: UIViewController {
                     self.btnMic.isEnabled = true
                 })
                 
-            }else if watsonMock.responseType == .images {
+            } else if watsonMock.responseType == .images {
+                
+                self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
+                    if let data = data {
+                        SoundManager.shared.playSound(withData: data)
+                    }
+                    self.mockImageView.isHidden = false
+                    self.lblAnswer1.isHidden = true
+                    self.btnQuestion1.isHidden = true
+                    
+                    button.setImage(UIImage(named: "microphone"), for: .selected)
+                    self.imgFreq.image = UIImage(named: "voice_stop")
+                    self.btnMic.isEnabled = true
+                })
+                
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                     self.btnQuestion1.isHidden = true
                     self.imgFreq.isHidden = true
-                    self.mockImageView.isHidden = false
                     self.lblAnswer1.isHidden = true
                     }
+                
             } else if watsonMock.responseType == .maps {
+                
+                self.watsonIntegration.requestWatsonToTextToSpeech(text: self.lblAnswer1.text ?? "", completion: { (data) in
+                    if let data = data {
+                        SoundManager.shared.playSound(withData: data)
+                    }
+                    
+                    
+                    
+                    button.setImage(UIImage(named: "microphone"), for: .selected)
+                    self.imgFreq.image = UIImage(named: "voice_stop")
+                    self.lblAnswer1.isHidden = true
+                    
+                })
+                
                 self.lblQuestion1.isHidden = false
                 self.mockImageView.isHidden = true
                 self.lblAnswer1.isHidden = true
