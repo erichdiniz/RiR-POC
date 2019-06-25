@@ -26,6 +26,10 @@
 		76674D1E22C1053C00295391 /* WatsonMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76674D1D22C1053C00295391 /* WatsonMock.swift */; };
 		76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD941322BD6ACF00597BF0 /* WatsonIntegration.swift */; };
 		76CD941822BD6C6F00597BF0 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD941722BD6C6F00597BF0 /* SoundManager.swift */; };
+		76E2270422C2579E000A2188 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2270322C2579E000A2188 /* Device.swift */; };
+		76E2270622C257E3000A2188 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2270522C257E3000A2188 /* Size.swift */; };
+		76E2270822C257F9000A2188 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2270722C257F9000A2188 /* Type.swift */; };
+		76E2270A22C25811000A2188 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E2270922C25811000A2188 /* Version.swift */; };
 		C56918CAA38C7126AF17C21D /* Pods_RiR_POCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C2490CB32C0E1AC04DEF07 /* Pods_RiR_POCTests.framework */; };
 		FC2F2032864D15245F33004E /* Pods_RiR_POCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52C2492F21426E2369CC080 /* Pods_RiR_POCUITests.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +78,10 @@
 		76674D1D22C1053C00295391 /* WatsonMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonMock.swift; sourceTree = "<group>"; };
 		76CD941322BD6ACF00597BF0 /* WatsonIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonIntegration.swift; sourceTree = "<group>"; };
 		76CD941722BD6C6F00597BF0 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		76E2270322C2579E000A2188 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		76E2270522C257E3000A2188 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		76E2270722C257F9000A2188 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		76E2270922C25811000A2188 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		A02D781FC01DB48838FEA462 /* Pods-RiR_POCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiR_POCTests.release.xcconfig"; path = "Target Support Files/Pods-RiR_POCTests/Pods-RiR_POCTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB6E1161CA55717F8B5AA579 /* Pods-RiR_POC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiR_POC.debug.xcconfig"; path = "Target Support Files/Pods-RiR_POC/Pods-RiR_POC.debug.xcconfig"; sourceTree = "<group>"; };
 		C52C2492F21426E2369CC080 /* Pods_RiR_POCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RiR_POCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +155,10 @@
 				30F5D23C22B8039B00090C11 /* RiR_POC.xcdatamodeld */,
 				76CD941622BD6C5800597BF0 /* Watson */,
 				30E1CE1C22C1436200FDB415 /* MapsViewController.swift */,
+				76E2270322C2579E000A2188 /* Device.swift */,
+				76E2270522C257E3000A2188 /* Size.swift */,
+				76E2270722C257F9000A2188 /* Type.swift */,
+				76E2270922C25811000A2188 /* Version.swift */,
 			);
 			path = RiR_POC;
 			sourceTree = "<group>";
@@ -443,10 +455,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F5D26A22B815BB00090C11 /* NotConnectedViewController.swift in Sources */,
+				76E2270622C257E3000A2188 /* Size.swift in Sources */,
 				306D1E3922B976E200E24CB4 /* SingersTableViewCell.swift in Sources */,
 				76674D1E22C1053C00295391 /* WatsonMock.swift in Sources */,
 				30E1CE1D22C1436200FDB415 /* MapsViewController.swift in Sources */,
 				76CD941422BD6ACF00597BF0 /* WatsonIntegration.swift in Sources */,
+				76E2270422C2579E000A2188 /* Device.swift in Sources */,
+				76E2270822C257F9000A2188 /* Type.swift in Sources */,
+				76E2270A22C25811000A2188 /* Version.swift in Sources */,
 				30F5D26822B8149D00090C11 /* ConnectedViewController.swift in Sources */,
 				30A9303222BFBE1500C21F41 /* Connected3ViewController.swift in Sources */,
 				30F5D23E22B8039B00090C11 /* RiR_POC.xcdatamodeld in Sources */,

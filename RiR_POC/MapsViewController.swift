@@ -10,10 +10,20 @@ import UIKit
 
 class MapsViewController: UIViewController {
 
+    @IBOutlet weak var mapImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Map Image
+        switch Device.version() {
+        case .iPhone6Plus, .iPhone7Plus, .iPhone8Plus:
+            self.mapImage.contentMode = .scaleToFill
+        case .iPhone6, .iPhone7, .iPhone8:
+            self.mapImage.contentMode = .scaleAspectFill
+        default:
+            self.mapImage.contentMode = .scaleAspectFit
+        }
     }
     
     @IBAction func didTouchCancelButton(_ sender: Any) {
