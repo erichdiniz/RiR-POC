@@ -19,7 +19,7 @@ class MapsViewController: UIViewController {
         switch Device.version() {
         case .iPhone6Plus, .iPhone7Plus, .iPhone8Plus:
             self.mapImage.contentMode = .scaleToFill
-        case .iPhone6, .iPhone7, .iPhone8:
+        case .iPhone6, .iPhone7, .iPhone8, .iPhone6S:
             self.mapImage.contentMode = .top
         default:
             self.mapImage.contentMode = .scaleAspectFit
